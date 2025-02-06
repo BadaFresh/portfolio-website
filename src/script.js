@@ -21,6 +21,14 @@ function lightToDark(theme){
     setTheme(currentTheme)
 
     document.addEventListener('DOMContentLoaded', () => {
+        setTimeout(() => {
+            document.querySelectorAll("#section1").forEach(element => {
+                element.style.opacity = "1";
+                element.style.transform = "translateX(0)";
+                type();
+            });
+        }, 1000);
+
         const themeButton = document.getElementById('theme-toggle')
 
         themeButton.addEventListener('click', () => {
@@ -33,3 +41,28 @@ function lightToDark(theme){
         })
     })
 })()
+
+document.addEventListener("scroll", function() {
+    contentApear();
+});
+
+function contentApear(){
+    document.querySelectorAll(".content-section").forEach(section => {
+        if (section.getBoundingClientRect().top < window.innerHeight * 0.75) {
+            section.style.opacity = "1";
+            section.style.transform = "translateX(0)";
+        }
+    });
+}
+
+const text = "Computer Science student with a strong foundation in software development, experienced in website development, and passionate about AI and cybersecurity. Enthusiastic about learning and applying new technologies to solve real-world problems. Fluent in English, Italian, Ukrainian, and Russian, enabling effective collaboration in diverse environments."
+let index=0;
+function type() {
+    if (index < text.length) {
+        document.getElementById("descript").innerHTML += text.charAt(index);
+        index++;
+        setTimeout(type, 100); // Adjust speed here
+    } else {
+        document.getElementById("descript").style.borderRight = "none"; // Remove cursor after typing
+    }
+}

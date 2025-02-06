@@ -1,9 +1,10 @@
+
 #theme-toggle {
             position: fixed;
             bottom: 20px;
             right: 20px;
-            width: 50px;
-            height: 50px;
+            width: 56px;
+            height: 56px;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -27,4 +28,113 @@
     #theme-toggle{
         background-color: #f8f9fa;
     }
+}
+
+.sidebar {
+    width: 12%;
+    position: fixed;
+    height: 100%;
+    background-color: #1e1e1e;
+    padding-top: 20px;
+}
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+}
+.sidebar a.active, .sidebar a:hover {
+    background-color: #575757;
+}
+#main {
+    margin-left: 12%;
+    margin-right: 7%;
+    width: 81%;
+}
+#main-content {
+    background: rgba(0, 0, 0, 0.2);
+    min-height: 100vh;
+    position: relative;
+    animation: expandWidth 1s ease-out;
+    flex-direction: column;
+    width: 100%;
+}
+.content-section {
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+.from-btm {
+    transform: translateY(15%);
+}
+.from-top {
+    transform: translateY(-15%);
+}
+.from-left {
+    transform: translateX(-10%);
+}
+.from-right {
+    transform: translateX(10%);
+}
+@keyframes expandWidth {
+    from { width: 0; opacity: 0; }
+    to { width: 100%; opacity: 1; }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+    #main {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #main-content{
+        padding: 5% !important;
+    }
+    .navbar {
+        width: 100%;
+        position: relative;
+    }
+    #mobileMenu{
+        background-color: #272a3099;
+    }
+    .from-left {
+        transform: translateX(-5%);
+    }
+    .from-right {
+        transform: translateX(5%);
+    }
+    .phot{
+        margin-left: 0 !important; /* Overrides Bootstrap's mx-5 */
+        margin-right: 0 !important;
+    }
+}
+.navbar {
+    background-color: #1e1e1e;
+    padding: 10px;
+    position: relative;
+    z-index: 1000;
+}
+
+#data1{
+    display: flex;
+}
+
+#introduce{
+    margin-left: 10%;
+    margin-right: 5%;
+    width: 70%;
+}
+
+.phot{
+    margin: 0 !important;
+    width: 15%; 
+}
+
+#descript{
+    font-size: 24px;
+    font-family: monospace;
+    border-right: 3px solid black; /* Cursor effect */
+    display: inline-block;
 }
