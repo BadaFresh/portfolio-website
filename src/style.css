@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'boogaloo';
+    src: url('../fonts/Boogaloo/Boogaloo-Regular.ttf');
+}
 
 #theme-toggle {
             position: fixed;
@@ -80,7 +84,78 @@
     to { width: 100%; opacity: 1; }
 }
 
+@keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+
+#scrollph{
+    opacity: 0;
+}
+
+#scrollpc{
+    opacity: 0;
+    height: 1px;
+}
+
+#leftbox{
+
+}
+#lefttitl{
+    font-family: 'boogaloo';
+
+}
+#section3{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+#time-select{
+    text-align: left;
+    width: 40%;
+    float: left;
+}
+
+@media (min-width: 768px){
+    #scrollpc{
+        height: 80px;
+        -webkit-animation: 25s ease 0s normal forwards 1 fadein;
+    }
+    #boxes{
+        display: grid;
+        grid-auto-flow: column;
+        direction:rtl;
+        text-align: left;
+    }
+    #section3{
+        float: left;
+    }
+    .rvnchart{
+        width: 300px;
+    }
+}
+@media (min-width: 1200px){
+    .rvnchart{
+        width: 500px;
+    }
+}
+@media (min-width: 1500px){
+    .rvnchart{
+        width: 650px;
+    }
+}
 @media (max-width: 768px) {
+    .rvnchart{
+        width: 380px;
+    }
+    #section3{
+        float: center;
+    }
     .sidebar {
         display: none;
     }
@@ -88,9 +163,6 @@
         width: 100%;
         margin-left: 0;
         margin-right: 0;
-    }
-    #main-content{
-        padding: 5% !important;
     }
     .navbar {
         width: 100%;
@@ -109,6 +181,18 @@
         margin-left: 0 !important; /* Overrides Bootstrap's mx-5 */
         margin-right: 0 !important;
     }
+    #descript{
+        font-size:large !important;
+    }
+    #scrollph{
+        opacity: 1;
+        -webkit-animation: 10s ease 0s normal forwards 1 fadein;
+    }
+
+    #boxes{
+        padding: 5%;
+    }
+    
 }
 .navbar {
     background-color: #1e1e1e;
@@ -125,6 +209,7 @@
     margin-left: 10%;
     margin-right: 5%;
     width: 70%;
+    text-align: center;
 }
 
 .phot{
@@ -138,3 +223,11 @@
     border-right: 3px solid black; /* Cursor effect */
     display: inline-block;
 }
+
+#grn{
+    color: green;
+}
+#yll{
+    color: yellowgreen;
+}
+

@@ -12,6 +12,7 @@ function lightToDark(theme){
     const setTheme = theme => {
         document.documentElement.setAttribute('data-bs-theme', theme)
         document.getElementById('theme-icon').src = theme === 'dark' ? 'img/dark.png' : 'img/light.png'
+        document.getElementById('scrollph').src = theme === 'dark' ? 'img/scroll-phone-dark.gif' : 'img/scroll-phone-light.gif'
         document.getElementById('theme-toggle').style.backgroundColor = theme === 'dark' ? "#38393a" : "#f8f9fa"
 
     }
@@ -44,6 +45,7 @@ function lightToDark(theme){
 
 document.addEventListener("scroll", function() {
     contentApear();
+    handleFirstScroll()
 });
 
 function contentApear(){
@@ -54,6 +56,28 @@ function contentApear(){
         }
     });
 }
+function handleFirstScroll() {
+    document.querySelectorAll(".scroll").forEach(section => {
+        if (section.getBoundingClientRect().top < window.innerHeight * 0.75) {
+        const scrollph = document.querySelector("#scrollph");
+        const scrollpc = document.querySelector("#scrollpc");
+        if (window.innerWidth <= 768 && scrollph) {
+            scrollph.style.opacity = "0"; // Change opacity
+            scrollph.style.animation = "null"; // Change animation
+        }
+        else{
+            scrollpc.style.opacity = "0"; // Change opacity
+            scrollpc.style.animation = "null"; // Change animation
+            scrollpc.style.innerHeight = "1px"; // Change animation
+        }
+
+
+        }
+    });
+}
+
+// Attach the event listener
+window.addEventListener("scroll", handleFirstScroll, { passive: true });
 
 const text = "Computer Science student with a strong foundation in software development, experienced in website development, and passionate about AI and cybersecurity. Enthusiastic about learning and applying new technologies to solve real-world problems. Fluent in English, Italian, Ukrainian, and Russian, enabling effective collaboration in diverse environments."
 let index=0;

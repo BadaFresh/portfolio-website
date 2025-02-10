@@ -7,6 +7,8 @@
     <title>Tymofii</title>
     <link rel="stylesheet" href="../my-bootstrap-project/bootstrap-5.3.2-dist/css/bootstrap.min.css">
     <script src="../my-bootstrap-project/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="chart.umd.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -55,30 +57,161 @@
                           </div>
                         </div>
                       </div>
+                      <img src="img/scroll-phone-dark.gif" alt="" class="my-5 scroll" id="scrollph">
                 </div>
                 <div id="introduce">
                     <div id="section1" class="content-section from-btm">
-                        <h1 class="text-center"><b>Tymofii</b></h1>
+                        <h1 class="text-center"><b id="maintitl"></b></h1>
                     </div>
                     <br>
                     <p class="fs-4" id="descript"></p>
+                    <img src="img/scroll.gif" alt="" id="scrollpc" class=" my-2 scroll">
                 </div>
             </div>
-            <div id="data2">
-                <div id="section2" class="content-section from-right"> <h2>Section 2</h2></div>
-            </div>
-            <div id="data3">
-                <div id="section3" class="content-section from-left"> <h2>Section 3</h2></div>
+            <div id="boxes" class="boxes">
+                <div id="rigxtbox" class="box">
+                    <div id="section2" class="content-section from-right"> <h2>Section 2sssssssssssss</h2></div>
+                </div>
+                <div id="leftbox"class="box">
+                    <h1 id="lefttitl" class="mx-3 content-section from-left">M<b id="yll">y</b> projects</h1>
+                    <div id="section3" class="content-section from-left rounded-4 p-4">
+                        <div id="rvnrdr" class="content-section from-left">
+                            <div id="slct" class="my-3">
+                                <select class="form-select" id="time-select" onchange="updateChart()">
+                                    <option selected>Static json dataset</option>
+                                    <option>Random values</option>
+                                    <option disabled>-_(._.)_- Disabled </option>
+                                  </select>
+                            </div>
+                            <br><br>
+                            <div class="rvnchart my-2 content-section from-left">
+                                <canvas id="myPieChart"></canvas>
+                            </div>
+                            <div class="rvnchart my-2 content-section from-left">
+                                <canvas id="myBlockChart"></canvas>
+                            </div>
+                            <div class="rvnchart my-2 content-section from-left">
+                                <canvas id="myLineChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <button id="theme-toggle" class="theme-toggle-btn">
-        <span><img id="theme-icon" src="img/dark.png" alt="Theme Icon"></span>
+        <span><img id="theme-icon" src="img/dark.png" alt="An icon by https://icons8.com"></span>
     </button>
 
-    <script src="script.js" defer></script>
+    <script src="script.js" ></script>
+
+    
+      
+
+
+
+      <script  src="../node_modules/revenue-radar/src/script.js"></script>
+      <script>
+        function updateChart() {
+            let c = Math.random() * (30 - 4) + 4;
+            let pieData = [];
+            let pieLables = [];
+            let graphData1 = [];
+            let graphData2 = [];
+            let graphLabels = [];
+            let i;
+
+            for (i = 0; i <= c; i++) { // Changed from `<=` to `<`
+                if (i < c / 2) {
+                    pieData.push(Math.random() * (1000 - 1) + 1);
+                    pieLables.push("Data " + i);
+                }
+                graphData1.push(Math.random() * 1000);
+                graphData2.push(Math.random() * 1000);
+                graphLabels.push("Data " + i); // Fixed double `.push`
+            }
+
+          runChart( {
+          chartType: "Pie",
+            canvasRef: '#myPieChart',
+            dropdownRef: "#time-select",
+            dataset:  [
+              "../datasets/pieChart.json",
+              {
+                  data: {
+                      products: pieLables,
+                      sells: pieData
+                  }
+              }
+              ],
+          });
+        runChart( {
+            chartType: "bar",
+            colors: {
+                backgroundColor1: '#FF0000',
+                borderColor1: 'rgb(15, 03, 123)',
+                backgroundColor2: '#00FF00',
+                borderColor2: 'green',
+            },
+            canvasRef: '#myBlockChart',
+            dropdownRef: "#time-select",
+            dataset:  [
+                "../datasets/grafs.json", 
+                {type: "bar",
+                data: {
+                    labels: graphLabels,
+                    datasetg: [
+                        { data: graphData1 }
+                    ],
+                    datasetw: [
+                        { data: graphData2 }
+                    ]
+                },}
+            ]
+        });
+        runChart( {
+            chartType: "line",
+            colors: {
+                backgroundColor1: '#FF0000',
+                borderColor1: 'rgb(15, 03, 123)',
+                backgroundColor2: '#00FF00',
+                borderColor2: 'green',
+            },
+            canvasRef: '#myLineChart',
+            dropdownRef: "#time-select",
+            dataset:  [
+                "../datasets/grafs.json", 
+                {type: "bar",
+                data: {
+                    labels: graphLabels,
+                    datasetg: [
+                        { data: graphData1 }
+                    ],
+                    datasetw: [
+                        { data: graphData2 }
+                    ]
+                }},
+            ]
+        });
+        
+      };
+      window.onload = function() {
+        updateChart();
+        const typed = new Typed('#maintitl', {
+            strings: ["Tymofii Mahno", "Махно Тимофій", "Web developer", "Tim", "Ready to work and discover!"],
+            typeSpeed: 50,
+            backSpeed: 30,
+            loop: true
+        });
+      };
+      </script>
 
 </body>
+
+
+<!-- <a target="_blank" href="https://icons8.com/icon/s3bQlfiTjA7u/sun">Sun</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> 
+ <a target="_blank" href="https://icons8.com/icon/WQiX8VTC7LIa/scroll-down-gesture">scroll down</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+ <a target="_blank" href="https://icons8.com/icon/nNmzHccs3Hku/double-down">Double Down</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>-->
 
 </html>
