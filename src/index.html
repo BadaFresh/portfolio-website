@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../my-bootstrap-project/bootstrap-5.3.2-dist/css/bootstrap.min.css">
     <script src="../my-bootstrap-project/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="confetti.min.js"></script>
     <script src="chart.umd.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -69,18 +70,109 @@
                 </div>
             </div>
             <div id="boxes" class="boxes">
-                <div id="rigxtbox" class="box">
-                    <div id="section2" class="content-section from-right"> <h2>Section 2sssssssssssss</h2></div>
+                <div id="rightbox" class="box">
+                    <ul id="ready">
+                        <li class="content-section from-right" onmouseover="ready()"><span class="ready org"></span>work<span class="readyy org"></span></li>
+                        <br>
+                        <li class="content-section from-right" onmouseover="ready()"><span class="ready org"></span>study<span class="readyy org"></span></li>
+                        <br>
+                        <li class="content-section from-right" onmouseover="ready()"><span class="ready org"></span>explore<span class="readyy org"></span></li>
+                    </ul>
+                    <br><br>
+                    <ul class="my-4" id="skills">
+                        <h1 class="content-section from-right">Skills & Technologies</h1>
+                        <br>
+                        <li  class="content-section from-right my-1 skls">Pr<b class="vio">o</b>gramming languages</li>
+                        <ul>
+                            <li class="prlang content-section from-right my-1"><span class="org">HTML</span>    <span class="blu">CSS</span></li>
+                            <li class="prlang content-section from-right my-1"><span class="yll">JavaScript</span></li>
+                            <li class="prlang content-section from-right my-1"><span class="dblu">C</span></li>
+                            <li class="prlang content-section from-right my-1"><span class="dblu">C++</span> <span class="yll">(Arduino)</span></li>
+                            <li class="prlang content-section from-right my-1"><span class="grn">Java</span></li>
+                            <li class="prlang content-section from-right my-1"><span class="vio">Python</span> <span>(basics)</span></li>
+                        </ul>
+                        <li class="skls content-section from-right my-1">Fr<b class="rd">a</b>meworks & tools</li>
+                        <ul>
+                            <li class="prlang content-section from-right my-1">Bootstrap <img src="img/bootstrap.png" class="logo" alt=""></li>
+                            <li class="prlang content-section from-right my-1">Jarts.js <img src="img/chartsjs.png" class="logo" alt=""></li>
+                            <li class="prlang content-section from-right my-1">GitHub <img src="img/git.png" class="logo" alt=""></li>
+                            <li class="prlang content-section from-right my-1">NPM packages (Node.js) <img src="img/npm.png" class="logo" alt=""></li>
+                            <li class="prlang content-section from-right my-1">Parcel <img src="img/parcel.avif" class="logo" alt=""></li>
+                            <li class="prlang content-section from-right my-1">Linter (ESlint) <img src="img/ESlint.png" class="logo" alt=""></li>
+                            <li class="prlang content-section from-right my-1"><span class="vio">Python</span> <span class="dblu">C</span> <span class="dblu">C++</span> <span class="grn">Java</span> libraries</li>
+                        </ul>
+                        <li class="skls content-section from-right my-1">Certific<b class="yll">a</b>tions</li>
+                        <ul>
+                            <li class="prlang content-section from-right my-1">MATLAB:</li>
+                            <ul>
+                                <li class="mtlb content-section from-right my-1">MATLAB Onramp</li>
+                                <li class="mtlb content-section from-right my-1">Simulink Onramp</li>
+                                <li class="mtlb content-section from-right my-1">Simscapeonramp</li>
+                            </ul>
+                            <li class="prlang content-section from-right my-1"><b class="rd">E</b>nglish <b class="blu nb">B2</b> Cambrige certification (By May 2024)</li>
+                        </ul>
+                    </ul>
+                    <ul class="content-section from-right" id="exp" onmouseover="skills()">
+                        <h1 class="content-section from-right my-3">Experience & Education</h1>
+                        <li class="skls content-section from-right my-2">Working experience</li>
+                        <ul>
+                            <li class="prlang content-section from-right my-1">Avidity (Berlin) - 1 month internship (mostly backend development)</li>
+                            <li class="prlang content-section from-right my-1">Freelance (mostly Ukraine) - 12+ hours (frontend development)</li>
+                            <li class="prlang content-section from-right my-1 op">New internship is comming... 1 month (Ferrara)</li>
+                        </ul>
+                        <li class="skls content-section from-right my-2">Studies</li>
+                        <ul>
+                            <li class="prlang content-section from-right my-1"><b class="brz">Secondary school</b>: Фінансовий ліцей (Kyiv) <img src="img/fl.png" class="logo rounded-5" alt=""></li>
+                            <ul>
+                                <li class="prlang content-section from-right my-1"><span class="vio">Python</span> (basics) <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1">HW structure basics <span class="skillsg org"></span></li>
+                            </ul>
+                            <li class="prlang content-section from-right my-1">IT Step Academy (Kyiv) <img src="img/itstep.png" class="logo" alt=""></li>
+                            <ul>
+                                <li class="prlang content-section from-right my-1">3D design basics <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1"><span class="dblu">Photoshop</span> basics (2D design)<span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1">Frontend development (<span class="org">HTML</span> <span class="blu">CSS</span>)<span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1"><span class="vio">Python</span> (jr level) <span class="skillsg org"></span></li>
+                            </ul>
+                            <li class="prlang content-section from-right my-1"><b class="slvr">High school</b>: I.T.I. "N.Copernico - A.Carpeggiani" (Ferrara) with computer science degree <img src="img/iti.jpg" class="logo rounded-4" alt=""></li>
+                            <ul>
+                                <li class="prlang content-section from-right my-1"><span class="dblu">C</span> <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1"><span class="dblu">C++</span> <span class="yll">(Arduino)</span> <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1"><span class="org">HTML</span> <span class="blu">CSS</span> <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1"><span class="grn">Java</span> <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1"><span class="yll">JavaScript</span> <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1">Networking/Networking structure (ISO/OSI)/Networking systems/Networking(TCP/IP) devices management <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1">SW/HW structure <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1">OS Structure <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1">OOP/OOD basics <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1">Telecomunications basics <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1">Electronics basics <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1"><b class="slvr">Machine language</b>/biary structure basics <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1">Creating and moderating logical circuits <b class="yll">(+Arduino)</b> <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1">MATLAB <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1">Artificial Intelligence basics <span class="skillsg org"></span></li>
+                            </ul>
+                            <li class="prlang content-section from-right my-1"><b class="grn">W</b>3<b class="grn">Schools</b></li>
+                            <ul>
+                                <li class="prlang content-section from-right my-1"><span class="dblu">C</span> <span class="org">HTML</span> <span class="blu">CSS</span> <span class="yll">JavaScript</span> skills improvements <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1"><span class="dblu">C++</span> basics <span class="skillsg org"></span></li>
+                            </ul>
+                        </ul>
+                    </ul>
+                    <div>
+                        <button id="confetti" onclick="confetime()">ddd</button>
+                    </div>
                 </div>
                 <div id="leftbox"class="box">
-                    <h1 id="lefttitl" class="mx-3 content-section from-left">M<b id="yll">y</b> projects</h1>
                     <div id="section3" class="content-section from-left rounded-4 p-4">
+                        <h1 id="lefttitl" class="mx-3 content-section from-left">M<b class="yll">y</b> projects</h1>
+                        <br>
                         <div id="rvnrdr" class="content-section from-left">
                             <div id="slct" class="my-3">
                                 <select class="form-select" id="time-select" onchange="updateChart()">
                                     <option selected>Static json dataset</option>
                                     <option>Random values</option>
-                                    <option disabled>-_(._.)_- Disabled </option>
+                                    <option disabled>Disabled -_(._.)_-</option>
                                   </select>
                             </div>
                             <br><br>
@@ -199,7 +291,7 @@
       window.onload = function() {
         updateChart();
         const typed = new Typed('#maintitl', {
-            strings: ["Tymofii Mahno", "Махно Тимофій", "Web developer", "Tim", "Ready to work and discover!"],
+            strings: ["Tymofii Mahno", "Махно Тимофій", "Web developer", "Tim", "Ready to work and explore!"],
             typeSpeed: 50,
             backSpeed: 30,
             loop: true

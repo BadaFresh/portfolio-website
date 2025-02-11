@@ -79,7 +79,7 @@ function handleFirstScroll() {
 // Attach the event listener
 window.addEventListener("scroll", handleFirstScroll, { passive: true });
 
-const text = "Computer Science student with a strong foundation in software development, experienced in website development, and passionate about AI and cybersecurity. Enthusiastic about learning and applying new technologies to solve real-world problems. Fluent in English, Italian, Ukrainian, and Russian, enabling effective collaboration in diverse environments."
+const text = "Computer Science student with a strong foundation in software development, experienced in website development, and passionate about AI and cybersecurity. Enthusiastic about learning and applying new technologies to solve real-world problems. Fluent in English, Italian, Ukrainian and Russian, enabling effective collaboration in diverse environments."
 let index=0;
 function type() {
     if (index < text.length) {
@@ -89,4 +89,45 @@ function type() {
     } else {
         document.getElementById("descript").style.borderRight = "none"; // Remove cursor after typing
     }
+}
+
+function ready() {
+    document.querySelectorAll(".ready").forEach(el => {
+        el.innerHTML = "Ready to ";
+    });
+
+    document.querySelectorAll(".readyy").forEach(el => {
+        el.innerHTML = "!";
+    });
+    setTimeout(() => {
+        document.querySelectorAll(".ready").forEach(el => {
+            el.innerHTML = "";
+        });
+    
+        document.querySelectorAll(".readyy").forEach(el => {
+            el.innerHTML = "";
+        });
+    }, 25000)
+}
+
+function skills(){
+    document.querySelectorAll(".skillsg").forEach(el => {
+        el.innerHTML = "skills gained!";
+    });
+    setTimeout(() => {
+        document.querySelectorAll(".skillsg").forEach(el => {
+            el.innerHTML = "";
+        });
+    }, 30000)
+}
+
+function confetime(){
+    let confetti = new Confetti('confetti');
+
+    // Edit given parameters
+    confetti.setCount(75);
+    confetti.setSize(1);
+    confetti.setPower(25);
+    confetti.setFade(false);
+    confetti.destroyTarget(true);
 }

@@ -3,6 +3,16 @@
     src: url('../fonts/Boogaloo/Boogaloo-Regular.ttf');
 }
 
+@font-face {
+    font-family: 'Jua';
+    src: url('../fonts/Jua/Jua-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Chewy';
+    src: url('../fonts/Chewy/Chewy-Regular.ttf');
+}
+
 #theme-toggle {
             position: fixed;
             bottom: 20px;
@@ -33,6 +43,19 @@
         background-color: #f8f9fa;
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    .op{
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .op{
+        color: rgba(0, 0, 0, 0.6);
+    }
+}
+
 
 .sidebar {
     width: 12%;
@@ -105,9 +128,6 @@
     height: 1px;
 }
 
-#leftbox{
-
-}
 #lefttitl{
     font-family: 'boogaloo';
 
@@ -121,16 +141,47 @@
     float: left;
 }
 
+#ready{
+    font-size:xx-large;
+    font-family: 'Jua';
+    font-weight: 700;
+}
+
+#skills{
+    font-family: 'Chewy';
+}
+.skls{
+    font-size:xx-large;
+    font-weight: 700;
+}
+.prlang{
+    font-size:x-large;
+}
+.mtlb{
+    font-size: larger;
+}
+#exp{
+    font-family: 'boogaloo';
+}
+
 @media (min-width: 768px){
+    #rightbox{
+        padding-inline: 2%;
+    }
     #scrollpc{
         height: 80px;
         -webkit-animation: 25s ease 0s normal forwards 1 fadein;
     }
-    #boxes{
-        display: grid;
-        grid-auto-flow: column;
-        direction:rtl;
-        text-align: left;
+    #boxes {
+        display: flex; /* Use flexbox */
+        justify-content: space-between; /* Ensures even spacing */
+        direction: rtl;
+    }
+
+    .box {
+        flex: 1; /* Makes each box take up equal space */
+        width: 50%; /* Explicitly define width */
+        direction: ltr;
     }
     #section3{
         float: left;
@@ -150,8 +201,11 @@
     }
 }
 @media (max-width: 768px) {
+    #rightbox{
+        padding-inline: 4%;
+    }
     .rvnchart{
-        width: 380px;
+        width: 300px;
     }
     #section3{
         float: center;
@@ -194,6 +248,9 @@
     }
     
 }
+.logo{
+    width: 50px;
+}
 .navbar {
     background-color: #1e1e1e;
     padding: 10px;
@@ -224,10 +281,34 @@
     display: inline-block;
 }
 
-#grn{
-    color: green;
-}
-#yll{
-    color: yellowgreen;
+.nb{
+    font-weight: 200;
 }
 
+.yll{
+    color: yellowgreen;
+}
+.vio{
+    color: blueviolet;
+}
+.org{
+    color: darkgoldenrod;
+}
+.blu{
+    color: rgb(0, 129, 209);
+}
+.dblu{
+    color: blue;
+}
+.grn{
+    color: green;
+}
+.rd{
+    color: red;
+}
+.brz{
+    color: #CD7F32;
+}
+.slvr{
+    color: rgb(150, 150, 150);
+}
