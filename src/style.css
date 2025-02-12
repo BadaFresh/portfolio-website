@@ -13,6 +13,10 @@
     src: url('../fonts/Chewy/Chewy-Regular.ttf');
 }
 
+.proj{
+    font-family: 'boogaloo';
+    font-size: x-large;
+}
 #theme-toggle {
             position: fixed;
             bottom: 20px;
@@ -44,16 +48,40 @@
     }
 }
 
-@media (prefers-color-scheme: dark) {
-    .op{
-        color: rgba(255, 255, 255, 0.6);
-    }
+/* Light theme */
+[data-bs-theme="light"] {
+    --bs-body-bg: #f8f9fa; /* Example background */
+    --bs-body-color: #212529; /* Text color */
 }
 
-@media (prefers-color-scheme: light) {
-    .op{
-        color: rgba(0, 0, 0, 0.6);
-    }
+[data-bs-theme="light"] #theme-toggle {
+    background-color: #f8f9fa;
+}
+
+[data-bs-theme="light"] .op {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+[data-bs-theme="light"] a {
+    color: black;
+}
+
+/* Dark theme */
+[data-bs-theme="dark"] {
+    --bs-body-bg: #212529;
+    --bs-body-color: #f8f9fa;
+}
+
+[data-bs-theme="dark"] #theme-toggle {
+    background-color: #343a40;
+}
+
+[data-bs-theme="dark"] .op {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+[data-bs-theme="dark"] a {
+    color: white;
 }
 
 
@@ -147,7 +175,7 @@
     font-weight: 700;
 }
 
-#skills{
+.skills{
     font-family: 'Chewy';
 }
 .skls{
@@ -160,11 +188,15 @@
 .mtlb{
     font-size: larger;
 }
-#exp{
+.exp{
     font-family: 'boogaloo';
 }
 
-@media (min-width: 768px){
+.confeti{
+    float: right;
+}
+
+@media (min-width: 992px){
     #rightbox{
         padding-inline: 2%;
     }
@@ -187,25 +219,25 @@
         float: left;
     }
     .rvnchart{
-        width: 300px;
+        width: 375px;
     }
 }
 @media (min-width: 1200px){
     .rvnchart{
-        width: 500px;
+        width: 450px;
     }
 }
 @media (min-width: 1500px){
     .rvnchart{
-        width: 650px;
+        width: 600px;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     #rightbox{
         padding-inline: 4%;
     }
     .rvnchart{
-        width: 300px;
+        width: 550px;
     }
     #section3{
         float: center;
@@ -224,6 +256,7 @@
     }
     #mobileMenu{
         background-color: #272a3099;
+        width: 80%;
     }
     .from-left {
         transform: translateX(-5%);
@@ -248,8 +281,19 @@
     }
     
 }
+@media (max-width: 576px){
+    .rvnchart{
+        width: 280px;
+    }
+    .social{
+        width: 35px !important;
+    }
+}
 .logo{
     width: 50px;
+}
+.miniLogo{
+    height: 25px;
 }
 .navbar {
     background-color: #1e1e1e;
@@ -311,4 +355,74 @@
 }
 .slvr{
     color: rgb(150, 150, 150);
+}
+
+
+.navbar-toggler {
+    position: fixed; /* Keeps it in place */
+    top: 15px; /* Adjust vertical position */
+    left: 15px; /* Adjust horizontal position */
+    z-index: 1050; /* Ensures it's above other elements */
+    border: none; /* Optional: Removes border */
+    background: transparent; /* Optional: Removes background */
+    padding: 8px; /* Adjust padding for better touch */
+}
+
+.navbar-toggler-icon {
+    width: 30px; /* Adjust width */
+    height: 4px; /* Set bar thickness */
+    background-color: white; /* Change bar color */
+    display: block;
+    position: relative;
+    border-radius: 2px;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    left: 0;
+    border-radius: 2px;
+}
+.navbar-toggler.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.navbar-toggler-icon::before {
+    top: -8px;
+}
+
+.navbar-toggler-icon::after {
+    top: 8px;
+}
+
+#leftMenue{
+    min-height: 100%;
+}
+
+.social{
+    width: 40px;
+}
+.socialm{
+    width: 25px;
+}
+#socialm{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+}
+
+.sm{
+    opacity: 0.6;
+}
+.sm:hover{
+    opacity: 1;
+}
+
+#cprt{
+    float: right;
 }
