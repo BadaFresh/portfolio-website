@@ -1,0 +1,481 @@
+@font-face {
+    font-family: 'boogaloo';
+    src: url('../fonts/Boogaloo/Boogaloo-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Jua';
+    src: url('../fonts/Jua/Jua-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Chewy';
+    src: url('../fonts/Chewy/Chewy-Regular.ttf');
+}
+
+.proj{
+    font-family: 'boogaloo';
+    font-size: x-large;
+}
+#theme-toggle {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            border: none;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+#theme-icon{
+    height: 32px;
+}
+
+@include color-mode(dark) {
+    #theme-toggle{
+        background-color: #f8f9fa;
+    }
+}
+
+@include color-mode(light) {
+    #theme-toggle{
+        background-color: #f8f9fa;
+    }
+}
+
+/* Light theme */
+[data-bs-theme="light"] {
+    --bs-body-bg: #f8f9fa; /* Example background */
+    --bs-body-color: #212529; /* Text color */
+}
+
+[data-bs-theme="light"] #theme-toggle {
+    background-color: #f8f9fa;
+}
+
+[data-bs-theme="light"] .op {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+[data-bs-theme="light"] a {
+    color: black;
+}
+[data-bs-theme="light"] .wh {
+    color: whitesmoke;
+}
+#mobileMenu{
+    color: whitesmoke;
+}
+/* Dark theme */
+[data-bs-theme="dark"] {
+    --bs-body-bg: #212529;
+    --bs-body-color: #f8f9fa;
+}
+
+[data-bs-theme="dark"] #theme-toggle {
+    background-color: #343a40;
+}
+
+[data-bs-theme="dark"] .op {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+[data-bs-theme="dark"] a {
+    color: white;
+}
+[data-bs-theme="dark"] #npm{
+    color: white;
+  }
+
+[data-bs-theme="light"] .sidebar {
+    background-color: #444444;
+}
+
+.sidebar {
+    width: 12%;
+    position: fixed;
+    height: 100%;
+    background-color: #1e1e1e;
+    padding-top: 20px;
+}
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+}
+.sidebar a.active, .sidebar a:hover {
+    background-color: #575757;
+    color: white;
+}
+#main {
+    margin-left: 12%;
+    margin-right: 7%;
+    width: 81%;
+}
+#main-content {
+    background: rgba(0, 0, 0, 0.2);
+    min-height: 100vh;
+    position: relative;
+    animation: expandWidth 1s ease-out;
+    flex-direction: column;
+    width: 100%;
+}
+.content-section {
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+.from-btm {
+    transform: translateY(15%);
+}
+.from-top {
+    transform: translateY(-15%);
+}
+.from-left {
+    transform: translateX(-10%);
+}
+.from-right {
+    transform: translateX(10%);
+}
+@keyframes expandWidth {
+    from { width: 0; opacity: 0; }
+    to { width: 100%; opacity: 1; }
+}
+
+@keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+
+#scrollph{
+    opacity: 0;
+}
+
+#scrollpc{
+    opacity: 0;
+    height: 1px;
+}
+
+#lefttitl{
+    font-family: 'boogaloo';
+
+}
+#section3{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+#time-select{
+    text-align: left;
+    width: 40%;
+    float: left;
+}
+
+#ready{
+    font-size:xx-large;
+    font-family: 'Jua';
+    font-weight: 700;
+}
+
+.skills{
+    font-family: 'Chewy';
+}
+.skls{
+    font-size:xx-large;
+    font-weight: 700;
+}
+.prlang{
+    font-size:x-large;
+}
+.mtlb{
+    font-size: larger;
+}
+.exp{
+    font-family: 'boogaloo';
+}
+
+.confeti{
+    float: right;
+}
+
+@media (min-width: 992px){
+    #rightbox{
+        padding-inline: 2%;
+    }
+    #scrollpc{
+        height: 80px;
+        -webkit-animation: 25s ease 0s normal forwards 1 fadein;
+    }
+    #boxes {
+        display: flex; /* Use flexbox */
+        justify-content: space-between; /* Ensures even spacing */
+        direction: rtl;
+    }
+
+    .box {
+        flex: 1; /* Makes each box take up equal space */
+        width: 50%; /* Explicitly define width */
+        direction: ltr;
+    }
+    #section3{
+        float: left;
+    }
+    .rvnchart{
+        width: 375px;
+    }
+}
+@media (min-width: 1200px){
+    .rvnchart{
+        width: 450px;
+    }
+}
+@media (min-width: 1500px){
+    .rvnchart{
+        width: 600px;
+    }
+}
+@media (max-width: 992px) {
+    #rightbox{
+        padding-inline: 4%;
+    }
+    .rvnchart{
+        width: 550px;
+    }
+    #section3{
+        float: center;
+    }
+    .sidebar {
+        display: none;
+    }
+    #main {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .navbar {
+        width: 100%;
+        position: relative;
+    }
+    #mobileMenu{
+        background-color: #272a3099;
+        width: 80%;
+    }
+    .from-left {
+        transform: translateX(-5%);
+    }
+    .from-right {
+        transform: translateX(5%);
+    }
+    .phot{
+        margin-left: 0 !important; /* Overrides Bootstrap's mx-5 */
+        margin-right: 0 !important;
+    }
+    #descript{
+        font-size:large !important;
+    }
+    #scrollph{
+        opacity: 1;
+        -webkit-animation: 10s ease 0s normal forwards 1 fadein;
+    }
+
+    #boxes{
+        padding: 5%;
+    }
+    
+}
+@media (max-width: 576px){
+    .rvnchart{
+        width: 280px;
+    }
+    .social{
+        width: 35px !important;
+    }
+}
+.logo{
+    width: 50px;
+}
+.miniLogo{
+    height: 25px;
+}
+.navbar {
+    background-color: #1e1e1e;
+    padding: 10px;
+    position: relative;
+    z-index: 1000;
+}
+
+#data1{
+    display: flex;
+}
+
+#introduce{
+    margin-left: 10%;
+    margin-right: 5%;
+    width: 70%;
+    text-align: center;
+}
+
+.phot{
+    margin: 0 !important;
+    width: 15%; 
+}
+
+#descript{
+    font-size: 24px;
+    font-family: monospace;
+    border-right: 3px solid black; /* Cursor effect */
+    display: inline-block;
+}
+
+.nb{
+    font-weight: 200;
+}
+
+.yll{
+    color: yellowgreen;
+}
+.vio{
+    color: blueviolet;
+}
+.org{
+    color: darkgoldenrod;
+}
+.blu{
+    color: rgb(0, 129, 209);
+}
+.dblu{
+    color: blue;
+}
+.grn{
+    color: green;
+}
+.rd{
+    color: red;
+}
+.brz{
+    color: #CD7F32;
+}
+.slvr{
+    color: rgb(150, 150, 150);
+}
+
+
+.navbar-toggler {
+    position: fixed; /* Keeps it in place */
+    top: 15px; /* Adjust vertical position */
+    left: 15px; /* Adjust horizontal position */
+    z-index: 1050; /* Ensures it's above other elements */
+    border: none; /* Optional: Removes border */
+    background: transparent; /* Optional: Removes background */
+    padding: 8px; /* Adjust padding for better touch */
+}
+
+.navbar-toggler-icon {
+    width: 30px; /* Adjust width */
+    height: 4px; /* Set bar thickness */
+    background-color: white; /* Change bar color */
+    display: block;
+    position: relative;
+    border-radius: 2px;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    left: 0;
+    border-radius: 2px;
+}
+.navbar-toggler.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.navbar-toggler-icon::before {
+    top: -8px;
+}
+
+.navbar-toggler-icon::after {
+    top: 8px;
+}
+
+#leftMenue{
+    min-height: 100%;
+}
+
+.social{
+    width: 40px;
+}
+.socialm{
+    width: 25px;
+    color: whitesmoke;
+}
+#socialm{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+}
+
+.sm{
+    opacity: 0.6;
+}
+.sm:hover{
+    opacity: 1;
+}
+
+#cprt{
+    float: right;
+}
+
+
+.now-playing {
+    transition: transform 0.3s ease;
+    border-radius: 25px; /* Booba rounded design */
+    overflow: hidden;
+  }
+  .now-playing:hover {
+    transform: scale(1.05);
+  }
+  /* Album cover image */
+  .album-cover {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 15px; /* subtle rounding for the image */
+  }
+  /* Icon styling */
+  .now-playing a{
+    text-decoration:none;
+  }
+  .now-playing a img {
+    height: 30px;
+    transition: transform 0.2s ease;
+  }
+  .now-playing a img:hover {
+    transform: scale(1.2);
+  }
+
+  #hsc{
+    display: flex;
+  }
+
+  .projecct{
+    float: right;
+  }
+
+ #imglinks{
+    display: none;
+ }

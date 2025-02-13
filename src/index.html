@@ -1,11 +1,441 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tymofii</title>
+    <link rel="stylesheet" href="../my-bootstrap-project/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <script src="../my-bootstrap-project/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="confetti.min.js"></script>
+    <script src="chart.umd.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+    <button class="navbar-toggler d-lg-none my-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" id="menuButton">
+        <span class="navbar-toggler-icon"></span>
+    </button>
     
+    
+    
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title"><b>Menu</b></h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <a href="#maintitl" class="nav-link wh" id="hp"><img loading="lazy" src="img/darkHP.png" alt="" class="miniLogo" onclick="homeAnim()" id="hpImm"> Introductiuon</a>
+            <br>
+            <a href="#slstcn" class="nav-link skills wh">Skills & Technologies</a>
+            <br>
+            <a href="#prlan" class="nav-link wh">Pr<b class="vio">o</b>gramming languages <img loading="lazy" src="img/code.gif" class="miniLogo mx-2" alt=""></a>
+            <br>
+            <a href="#frtls" class="nav-link wh">Fr<b class="rd">a</b>meworks & tools <img loading="lazy" src="img/web.gif" class="miniLogo mx-2" alt=""></a>
+            <br>
+            <a href="#crtfct" class="nav-link wh">Certific<b class="yll">a</b>tions <img loading="lazy" src="img/certificate.gif" class="miniLogo mx-2" alt=""></a>
+            <br>
+            <a href="#leftbox" class="nav-link proj wh"><b>Projects</b></a>
+            <br>
+            <a href="#exp" class="nav-link exp wh">Experience & Education</a>
+            <br>
+            <a href="#we" class="nav-link wh"><b>Working experience</b></a>
+            <br>
+            <a href="#st" class="nav-link wh">Studies</a>
+            <br>
+            <div id="hsc"><a href="#hs" class="nav-link wh">High school (degree) </a> <a href="https://www.iiscopernico.edu.it/offerta-formativa-iti/informatica-e-telecomunicazioni#info" class="miniLogo mx-1"><img src="img/iti.jpg" class=" miniLogo rounded-4" alt=""></a></div>
+            <br>
+            <a href="#soc" class="nav-link wh"><b>Find me! (Social links)</b></a>
+        </div>
+    </div>
+    
+    <div id="leftMenue">
+        <div class="sidebar d-none d-lg-block">
+            <a href="#main" class="nav-link"><b>Introductiuon</b></a>
+            <a href="#slstcn" class="nav-link skills">Skills & Technologies</a>
+            <a href="#prlan" class="nav-link">Pr<b class="vio">o</b>gramming languages</a>
+            <a href="#frtls" class="nav-link">Fr<b class="rd">a</b>meworks & tools</a>
+            <a href="#crtfct" class="nav-link">Certific<b class="yll">a</b>tions</a>
+            <a href="#leftbox" class="nav-link proj"><b>Projects</b></a>
+            <a href="#exp" class="nav-link exp">Experience & Education</a>
+            <a href="#we" class="nav-link"><b>Working experience</b></a>
+            <a href="#st" class="nav-link">Studies</a>
+            <a href="#hs" class="nav-link">High school (degree)</a>
+            <a href="#soc" class="nav-link"><b>Find me! (Social links)</b></a>
+            <a href="#imglinks" class="nav-link imglinks" onclick="showLinks()">Immages/annimations</a>
+        </div>
+        <div id="socialm" class="m-2">
+            <a href="https://github.com/BadaFresh">
+                <svg fill="currentColor" class="bi bi-github socialm mx-1 sm" viewBox="0 0 16 16" title="GitHub">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                  </svg></a>
+            <a href="https://www.instagram.com/bada_fresh/"><svg fill="currentColor" class="mx-1 socialm bi bi-instagram sm" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                  </svg></a>
+            <a href="https://t.me/BadaFresh"><svg fill="currentColor" class="mx-1 socialm sm" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"/>
+            </svg></a>
+        </div>
+    </div>
+
+    <div id="main">
+        <div id="main-content" class="pt-5 pb-3">
+            <div id="data1">
+                <div id="section1" class="content-section from-top phot">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner rounded-end-5">
+                          <div class="carousel-item active">
+                            <img loading="lazy" src="img/me1.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img loading="lazy" src="img/me2.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img loading="lazy" src="img/me3.jpg" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                      </div>
+                      <img loading="lazy" src="img/scroll-phone-dark.gif" alt="" class="my-5 scroll" id="scrollph">
+                </div>
+                <div id="introduce">
+                    <div id="section1" class="content-section from-btm">
+                        <h1 class="text-center"><b id="maintitl"></b></h1>
+                    </div>
+                    <br>
+                    <p class="fs-4" id="descript"></p>
+                    <img loading="lazy" src="img/scroll.gif" alt="" id="scrollpc" class=" my-2 scroll">
+                </div>
+            </div>
+            <div id="boxes" class="boxes">
+                <div id="rightbox" class="box">
+                    <ul id="ready">
+                        <li class="content-section from-right" onmouseover="ready()"><span class="ready org"></span>work<span class="readyy org"></span></li>
+                        <br>
+                        <li class="content-section from-right" onmouseover="ready()"><span class="ready org"></span>study<span class="readyy org"></span></li>
+                        <br>
+                        <li class="content-section from-right" onmouseover="ready()"><span class="ready org"></span>explore<span class="readyy org"></span></li>
+                    </ul>
+                    <br><br id="slstcn">
+                    <ul class="my-4 skills">
+                        <h1 class="content-section from-right" >Skills & Technologies</h1>
+                        <br id="prlan">
+                        <li  class="content-section from-right my-1 skls">Pr<b class="vio">o</b>gramming languages</li>
+                        <ul>
+                            <li class="prlang content-section from-right my-1"><span class="org">HTML</span>    <span class="blu">CSS</span></li>
+                            <li class="prlang content-section from-right my-1"><span class="yll">JavaScript</span></li>
+                            <li class="prlang content-section from-right my-1"><span class="dblu">C</span></li>
+                            <li class="prlang content-section from-right my-1"><span class="dblu">C++</span> <span class="yll">(Arduino)</span></li>
+                            <li class="prlang content-section from-right my-1"><span class="grn">Java</span></li>
+                            <li class="prlang content-section from-right my-1"><span class="vio">Python</span> <span>(basics)</span></li>
+                        </ul>
+                        <li class="skls content-section from-right my-1" id="frtls">Fr<b class="rd">a</b>meworks & tools</li>
+                        <ul>
+                            <li class="prlang content-section from-right my-1">Bootstrap <img loading="lazy" src="img/bootstrap.png" class="logo" alt=""></li>
+                            <li class="prlang content-section from-right my-1">Jarts.js <img loading="lazy" src="img/chartsjs.png" class="logo" alt=""></li>
+                            <li class="prlang content-section from-right my-1">GitHub <img loading="lazy" src="img/github.svg" class="logo" alt=""></li>
+                            <li class="prlang content-section from-right my-1">NPM packages (Node.js) <img  loading="lazy"src="img/npm.png" class="logo" alt=""></li>
+                            <li class="prlang content-section from-right my-1">Parcel <img loading="lazy" src="img/parcel.avif" class="logo" alt=""></li>
+                            <li class="prlang content-section from-right my-1">Linter (ESlint) <img loading="lazy" src="img/ESlint.png" class="logo" alt=""></li>
+                            <li class="prlang content-section from-right my-1"><span class="vio">Python</span> <span class="dblu">C</span> <span class="dblu">C++</span> <span class="grn">Java</span> libraries</li>
+                        </ul>
+                        <li class="skls content-section from-right my-1" id="crtfct">Certific<b class="yll">a</b>tions</li>
+                        <ul>
+                            <li class="prlang content-section from-right my-1">MATLAB:</li>
+                            <ul>
+                                <li class="mtlb content-section from-right my-1">MATLAB Onramp</li>
+                                <li class="mtlb content-section from-right my-1">Simulink Onramp</li>
+                                <li class="mtlb content-section from-right my-1">Simscapeonramp</li>
+                            </ul>
+                            <li class="prlang content-section from-right my-1"><b class="rd">E</b>nglish <b class="blu nb">B2</b> Cambrige certification (By May 2024)</li>
+                        </ul>
+                    </ul>
+                    <ul class="content-section from-right exp" id="exp" onmouseover="skills()">
+                        <h1 class="content-section from-right my-3">Experience & Education</h1>
+                        <li class="skls content-section from-right my-2" id="we">Working experience</li>
+                        <ul>
+                            <li class="prlang content-section from-right my-1">Avidity (Berlin) - 1 month internship (mostly backend development)</li>
+                            <li class="prlang content-section from-right my-1">Freelance (mostly Ukraine) - 12+ hours (frontend development)</li>
+                            <li class="prlang content-section from-right my-1 op">New internship is comming... 1 month (Ferrara)</li>
+                        </ul>
+                        <li class="skls content-section from-right my-2" id="st">Studies</li>
+                        <ul>
+                            <li class="prlang content-section from-right my-1"><b class="brz">Secondary school</b>: Фінансовий ліцей (Kyiv) <img loading="lazy" src="img/fl.png" class="logo rounded-5" alt=""></li>
+                            <ul>
+                                <li class="prlang content-section from-right my-1"><span class="vio">Python</span> (basics) <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1">HW structure basics <span class="skillsg org"></span></li>
+                            </ul>
+                            <li class="prlang content-section from-right my-1">IT Step Academy (Kyiv) <img loading="lazy" src="img/itstep.png" class="logo" alt=""></li>
+                            <ul>
+                                <li class="prlang content-section from-right my-1">3D design basics <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1"><span class="dblu">Photoshop</span> basics (+2D design)<span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1">Frontend development (<span class="org">HTML</span> <span class="blu">CSS</span>)<span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1"><span class="vio">Python</span> (jr level) <span class="skillsg org"></span></li>
+                            </ul>
+                            <li class="prlang content-section from-right my-1" id="hs"><b class="slvr">High school</b>: I.T.I. "N.Copernico - A.Carpeggiani" (Ferrara) with computer science degree <a href="https://www.iiscopernico.edu.it/offerta-formativa-iti/informatica-e-telecomunicazioni#info"><img src="img/iti.jpg" class="logo rounded-4" alt=""></a></li>
+                            <ul>
+                                <li class="prlang content-section from-right my-1"><span class="dblu">C</span> <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1"><span class="dblu">C++</span> <span class="yll">(Arduino)</span> <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1"><span class="org">HTML</span> <span class="blu">CSS</span> <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1"><span class="grn">Java</span> <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1"><span class="yll">JavaScript</span> <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1">Networking/Networking structure (ISO/OSI)/Networking systems/Networking(TCP/IP) devices management <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1">SW/HW structure <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1">OS Structure <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1">OOP/OOD basics <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1">Telecomunications basics <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1">Electronics basics <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1"><b class="slvr">Machine language</b>/biary structure basics <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1">Creating and moderating logical circuits <b class="yll">(+Arduino)</b> <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1">MATLAB <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1">Artificial Intelligence basics <span class="skillsg org"></span></li>
+                            </ul>
+                            <li class="prlang content-section from-right my-1"><b class="grn">W</b>3<b class="grn">Schools</b></li>
+                            <ul>
+                                <li class="prlang content-section from-right my-1"><span class="dblu">C</span> <span class="org">HTML</span> <span class="blu">CSS</span> <span class="yll">JavaScript</span> skills improvements <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1"><span class="dblu">C++</span> basics <span class="skillsg org"></span></li>
+                            </ul>
+                        </ul>
+                        <br>
+                    </ul>
+                </div>
+                <div id="leftbox"class="box">
+                    <div id="section3" class="content-section from-left rounded-4 p-4">
+                        <h1 id="lefttitl" class="mx-3 content-section from-left">M<b class="yll">y</b> projects</h1>
+                        <br>
+                        <div id="rvnrdr" class="content-section from-left">
+                            <div id="slct" class="my-3">
+                                <select class="form-select" id="time-select" onchange="updateChart()">
+                                    <option selected>Static json dataset</option>
+                                    <option>Random values</option>
+                                    <option disabled>Disabled -_(._.)_-</option>
+                                  </select>
+                            </div>
+                            <br><br>
+                            <div class="rvnchart my-2 content-section from-left">
+                                <canvas id="myPieChart"></canvas>
+                            </div>
+                            <div class="rvnchart my-2 content-section from-left">
+                                <canvas id="myBlockChart"></canvas>
+                            </div>
+                            <div class="rvnchart my-2 content-section from-left">
+                                <canvas id="myLineChart"></canvas>
+                            </div>
+                            <br>
+                            <div class="projecct content-section from-left">
+                                <a href="https://github.com/avidity/revenue-radar"><button type="button" class="btn btn-outline-light border-4 gthb mx-1"><b>GitHub repository</b></button></a>
+                                <a href="https://www.npmjs.com/package/revenue-radar"><button type="button" class="btn btn-outline-danger border-4 mx-1" id="npm"><b>NPM link</b></button></a>
+                            </div>
+                            
+                        </div>
+                        <br><br>
+                        <h5 class="op content-section from-left">More projects are comming soon...</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="content-section from-right fs-3 m-4 px-5">
+                <button type="button" class="button btn btn-outline-info confeti" id="demo" oncli>wow!</button>
+            </div><br>
+
+            <div class="container py-5 px-3 content-section from-btm">
+                <div class="card now-playing shadow-sm">
+                  <div class="row g-0 align-items-center">
+                    <!-- Album Art -->
+                    <div class="col-auto">
+                      <img loading="lazy"
+                        src="https://i.ytimg.com/vi/Wu0G_9x-6-I/maxresdefault.jpg"
+                        alt="Album Cover"
+                        class="album-cover m-3"
+                      />
+                    </div>
+                    <!-- Track Info and Links -->
+                    <div class="col">
+                      <div class="card-body">
+                        <h5 class="card-title mb-1"><b>Now Playing</b></h5>
+                        <p class="card-text mb-2 fs-4">
+                          <strong>Ялта</strong> - Dzidzio
+                        </p>
+                        <div>
+                            <a class="mx-3"
+                            href="https://www.youtube.com/watch?v=Wu0G_9x-6-I"
+                            target="_blank"
+                            title="Listen on Youtoobe"
+                          >
+                            <img loading="lazy"
+                              src="img/youtoobe.png"
+                              alt="Youtoobe"
+                            />
+                          </a>
+                          <a
+                            href="https://open.spotify.com/track/299GRovRwfOPIoE37HwYQA"
+                            target="_blank"
+                            title="Listen on Spotify"
+                            class="mx-3"
+                          >
+                            <img loading="lazy"
+                              src="img/spotify.png"
+                              alt="Spotify"
+                            />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <br>
+            <div class="mx-4" id="soc">
+                <a href="https://github.com/BadaFresh">
+                    <svg fill="currentColor" class="sm social mx-1" viewBox="0 0 16 16" title="GitHub">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                </svg></a>
+                <a href="https://www.instagram.com/bada_fresh/"><svg fill="currentColor" class=" social mx-1  sm" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                      </svg></a>
+                <a href="https://t.me/BadaFresh"><svg fill="currentColor" class=" social mx-1 sm" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"/>
+                </svg></a>
+                <a href="https://wa.me/+393891195433"><svg fill="currentColor" class=" social mx-1 sm" viewBox="0 0 16 16">
+                    <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                </svg></a>
+                <a href="mailto:makhnotima@gmail.com"><svg fill="currentColor" class=" social mx-1 sm" viewBox="0 0 16 16">
+                    <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"/>
+                    <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
+                  </svg></a>
+            </div>
+
+            <div class="px-5" id="imglinks">
+                <br>
+                <a target="_blank" href="https://icons8.com/icon/s3bQlfiTjA7u/sun">Sun</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> <br>
+                <a target="_blank" href="https://icons8.com/icon/WQiX8VTC7LIa/scroll-down-gesture">scroll down</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> <br>
+                <a target="_blank" href="https://icons8.com/icon/nNmzHccs3Hku/double-down">Double Down</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> <br>
+                <a target="_blank" href="https://icons8.com/icon/EkVS0vhJIaAl/home">Home</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a><br>
+                <a target="_blank" href="https://icons8.com/icon/QsO1qiXCL8H2/code">Coding</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a><br>
+                <a target="_blank" href="https://icons8.com/icon/E0v2qeYDcNP6/cloud-development">Cloud Development</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a><br>
+                <a target="_blank" href="https://icons8.com/icon/qgBsyv2LrviU/certificate">Certificate</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a><br><br>
+                <button type="button" class="btn btn-outline-primary" onclick="hideLinks()">Hide!</button>
+                <br>
+            </div>
+
+            <div id="cprt" class="mx-3">&copy; 2025 Tymofii Makhno</div><br>
+        </div>
+    </div>
+    <button id="theme-toggle" class="theme-toggle-btn">
+        <span><img loading="lazy" id="theme-icon" src="img/dark.png" alt="An icon by https://icons8.com"></span>
+    </button>
+
+
+
+
+
+
+    <script src="script.js" ></script>
+
+    
+      
+
+
+
+      <script  src="../node_modules/revenue-radar/src/script.js"></script>
+      <script>
+        function updateChart() {
+            let c = Math.random() * (30 - 4) + 4;
+            let pieData = [];
+            let pieLables = [];
+            let graphData1 = [];
+            let graphData2 = [];
+            let graphLabels = [];
+            let i;
+
+            for (i = 0; i <= c; i++) { // Changed from `<=` to `<`
+                if (i < c / 2) {
+                    pieData.push(Math.random() * (1000 - 1) + 1);
+                    pieLables.push("Data " + i);
+                }
+                graphData1.push(Math.random() * 1000);
+                graphData2.push(Math.random() * 1000);
+                graphLabels.push("Data " + i); // Fixed double `.push`
+            }
+
+          runChart( {
+          chartType: "Pie",
+            canvasRef: '#myPieChart',
+            dropdownRef: "#time-select",
+            dataset:  [
+              "../datasets/pieChart.json",
+              {
+                  data: {
+                      products: pieLables,
+                      sells: pieData
+                  }
+              }
+              ],
+          });
+        runChart( {
+            chartType: "bar",
+            colors: {
+                backgroundColor1: '#FF0000',
+                borderColor1: 'rgb(15, 03, 123)',
+                backgroundColor2: '#00FF00',
+                borderColor2: 'green',
+            },
+            canvasRef: '#myBlockChart',
+            dropdownRef: "#time-select",
+            dataset:  [
+                "../datasets/grafs.json", 
+                {type: "bar",
+                data: {
+                    labels: graphLabels,
+                    datasetg: [
+                        { data: graphData1 }
+                    ],
+                    datasetw: [
+                        { data: graphData2 }
+                    ]
+                },}
+            ]
+        });
+        runChart( {
+            chartType: "line",
+            colors: {
+                backgroundColor1: '#FF0000',
+                borderColor1: 'rgb(15, 03, 123)',
+                backgroundColor2: '#00FF00',
+                borderColor2: 'green',
+            },
+            canvasRef: '#myLineChart',
+            dropdownRef: "#time-select",
+            dataset:  [
+                "../datasets/grafs.json", 
+                {type: "bar",
+                data: {
+                    labels: graphLabels,
+                    datasetg: [
+                        { data: graphData1 }
+                    ],
+                    datasetw: [
+                        { data: graphData2 }
+                    ]
+                }},
+            ]
+        });
+        
+      };
+      window.onload = function() {
+        updateChart();
+        const typed = new Typed('#maintitl', {
+            strings: ["Tymofii Mahno", "Махно Тимофій", "Web developer", "Tim", "Ready to work and explore!"],
+            typeSpeed: 50,
+            backSpeed: 30,
+            loop: true
+        });
+      };
+      </script>
+
 </body>
+
+
+
+
 </html>
