@@ -13,9 +13,12 @@ function lightToDark(theme){
         document.documentElement.setAttribute('data-bs-theme', theme)
         document.getElementById('theme-icon').src = theme === 'dark' ? 'img/dark.png' : 'img/light.png'
         document.getElementById('scrollph').src = theme === 'dark' ? 'img/scroll-phone-dark.gif' : 'img/scroll-phone-light.gif'
-        document.getElementById('hpImm').src = theme === 'dark' ? 'img/darkHP.png' : 'img/lightHP.png'
         document.getElementById('theme-toggle').style.backgroundColor = theme === 'dark' ? "#38393a" : "#f8f9fa"
-
+        document.querySelectorAll(".gthb").forEach(element => {
+            theme === "dark" ? element.classList.remove("btn-outline-dark")  : element.classList.remove("btn-outline-light"); 
+            theme === "dark" ? element.classList.add("btn-outline-light")  : element.classList.add("btn-outline-dark"); // If light mode, add this class
+        });
+        
     }
 
     // Immediately apply the theme when the page loads
@@ -45,10 +48,9 @@ function lightToDark(theme){
         const homeButton = document.getElementById("hp")
         
         homeButton.addEventListener('click', () => {
-            const currentTheme = document.documentElement.getAttribute('data-bs-theme');
-            document.getElementById('hpImm').src = currentTheme === 'dark' ? 'img/darkHPAnim.gif' : 'img/lightHPAnim.gif'
+            document.getElementById('hpImm').src = 'img/darkHPAnim.gif' 
             setTimeout(() => {
-                document.getElementById('hpImm').src = currentTheme === 'dark' ? 'img/darkHP.png' : 'img/lightHP.png'
+                document.getElementById('hpImm').src = 'img/darkHP.png' 
             }, 1120)
         })
 
@@ -72,7 +74,7 @@ document.addEventListener("scroll", function() {
 
 function contentApear(){
     document.querySelectorAll(".content-section").forEach(section => {
-        if (section.getBoundingClientRect().top < window.innerHeight * 0.88) {
+        if (section.getBoundingClientRect().top < window.innerHeight * 0.75) {
             section.style.opacity = "1";
             section.style.transform = "translateX(0)";
         }
@@ -80,7 +82,7 @@ function contentApear(){
 }
 function handleFirstScroll() {
     document.querySelectorAll(".scroll").forEach(section => {
-        if (section.getBoundingClientRect().top < window.innerHeight * 0.88) {
+        if (section.getBoundingClientRect().top < window.innerHeight * 0.75) {
         const scrollph = document.querySelector("#scrollph");
         const scrollpc = document.querySelector("#scrollpc");
         if (window.innerWidth <= 992 && scrollph) {
@@ -144,3 +146,10 @@ function skills(){
 }
 
 new Confetti('demo');
+
+function showLinks(){
+    document.getElementById("imglinks").style.display = "block" 
+}
+function hideLinks(){
+    document.getElementById("imglinks").style.display = "none" 
+}

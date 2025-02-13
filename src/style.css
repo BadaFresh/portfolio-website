@@ -65,7 +65,12 @@
 [data-bs-theme="light"] a {
     color: black;
 }
-
+[data-bs-theme="light"] .wh {
+    color: whitesmoke;
+}
+#mobileMenu{
+    color: whitesmoke;
+}
 /* Dark theme */
 [data-bs-theme="dark"] {
     --bs-body-bg: #212529;
@@ -83,7 +88,13 @@
 [data-bs-theme="dark"] a {
     color: white;
 }
+[data-bs-theme="dark"] #npm{
+    color: white;
+  }
 
+[data-bs-theme="light"] .sidebar {
+    background-color: #444444;
+}
 
 .sidebar {
     width: 12%;
@@ -100,6 +111,7 @@
 }
 .sidebar a.active, .sidebar a:hover {
     background-color: #575757;
+    color: white;
 }
 #main {
     margin-left: 12%;
@@ -409,6 +421,7 @@
 }
 .socialm{
     width: 25px;
+    color: whitesmoke;
 }
 #socialm{
     position: fixed;
@@ -426,3 +439,43 @@
 #cprt{
     float: right;
 }
+
+
+.now-playing {
+    transition: transform 0.3s ease;
+    border-radius: 25px; /* Booba rounded design */
+    overflow: hidden;
+  }
+  .now-playing:hover {
+    transform: scale(1.05);
+  }
+  /* Album cover image */
+  .album-cover {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 15px; /* subtle rounding for the image */
+  }
+  /* Icon styling */
+  .now-playing a{
+    text-decoration:none;
+  }
+  .now-playing a img {
+    height: 30px;
+    transition: transform 0.2s ease;
+  }
+  .now-playing a img:hover {
+    transform: scale(1.2);
+  }
+
+  #hsc{
+    display: flex;
+  }
+
+  .projecct{
+    float: right;
+  }
+
+ #imglinks{
+    display: none;
+ }
