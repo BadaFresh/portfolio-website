@@ -429,8 +429,12 @@
       };
       window.onload = function() {
         updateChart();
+        let typpe = ["Tymofii Mahno", "Махно Тимофій", "Web developer", "Tim"];
+        if (window.innerWidth > 992 && scrollph) {
+            typpe.push("Ready to work and explore!");
+        }
         const typed = new Typed('#maintitl', {
-            strings: ["Tymofii Mahno", "Махно Тимофій", "Web developer", "Tim", "Ready to work and explore!"],
+            strings: typpe,
             typeSpeed: 50,
             backSpeed: 30,
             loop: true
