@@ -271,10 +271,10 @@
         width: 80%;
     }
     .from-left {
-        transform: translateX(-3.5%);
+        transform: translateX(-3%);
     }
     .from-right {
-        transform: translateX(3.5%);
+        transform: translateX(3%);
     }
     .phot{
         margin-left: 0 !important; /* Overrides Bootstrap's mx-5 */
