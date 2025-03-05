@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'boogaloo';
-    src: url('../fonts/Boogaloo/Boogaloo-Regular.ttf');
+    src: url('fonts/Boogaloo/Boogaloo-Regular.ttf');
 }
 
 @font-face {
     font-family: 'Jua';
-    src: url('../fonts/Jua/Jua-Regular.ttf');
+    src: url('fonts/Jua/Jua-Regular.ttf');
 }
 
 @font-face {
     font-family: 'Chewy';
-    src: url('../fonts/Chewy/Chewy-Regular.ttf');
+    src: url('fonts/Chewy/Chewy-Regular.ttf');
 }
 
 .proj{
