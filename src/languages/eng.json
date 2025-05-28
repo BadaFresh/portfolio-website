@@ -1,0 +1,130 @@
+{
+    "site": {
+      "title": "Tymofii"
+    },
+    "nav": {
+      "menuTitle": "Menu",
+      "intro": "Introduction",
+      "skills": "Skills & Technologies",
+      "progLang1": "Pr",
+      "progLang2": "gramming languages",
+      "frameworks1": "Fr",
+      "frameworks2": "meworks & tools",
+      "certifications1": "Certific",
+      "certifications2": "tions",
+      "projects": "Projects",
+      "expEduc": "Experience & Education",
+      "workExp": "Working experience",
+      "studies": "Studies",
+      "highSchool": "High school (degree)",
+      "socialLinks": "Find me! (Social links)"
+    },
+    "r":{
+        "a": "a",
+        "EenglishCert1": "E"
+    },
+    "lime":{
+        "a": "a"
+    },
+    "v":{
+        "o": "o"
+    },
+    "readyList": {
+      "work": "work",
+      "study": "study",
+      "explore": "explore"
+    },
+    "skillsSection": {
+      "heading": "Skills & Technologies",
+      "progLang": "Programming languages",
+      "html": "HTML",
+      "css": "CSS",
+      "javascript": "JavaScript",
+      "cLang": "C",
+      "cpp": "C++",
+      "arduino": "(Arduino)",
+      "java": "Java",
+      "python": "Python",
+      "pythonBasics": "(basics)",
+      "frameworks": "Frameworks & tools",
+      "bootstrap": "Bootstrap",
+      "chartsjs": "Charts.js",
+      "github": "GitHub",
+      "npm": "NPM packages (Node.js)",
+      "parcel": "Parcel",
+      "eslint": "Linter (ESlint)",
+      "libraries": "Python, C, C++, Java libraries"
+    },
+    "certifications": {
+      "heading": "Certifications",
+      "matlab": "MATLAB:",
+      "matlabOnramp": "MATLAB Onramp",
+      "simulinkOnramp": "Simulink Onramp",
+      "simscapeOnramp": "Simscape Onramp",
+      "englishCert2": "English",
+      "englishCert3": "Cambridge certification (By May 2024)",
+      "avidityIntern": "avidity internship:",
+      "avidCert": "Certificate of Completion (by avidity)",
+      "erasmusCert": "INTERNSHIP CERTIFICATE (funded by Erasmus+ Programme)"
+    },
+    "expEduc": {
+      "heading": "Experience & Education",
+      "workHeading": "Working experience",
+      "avidity": "Avidity (Berlin) – 1 month internship (mostly frontend development)",
+      "freelance": "Freelance (mostly Ukraine) – 12+ hours (frontend development)",
+      "newIntern": "New internship is coming… 1 month (Ferrara)",
+      "studiesHeading": "Studies",
+      "secondarySchool": "Secondary school: Фінансовий ліцей (Kyiv)",
+      "pythonBasics": "Python (basics)",
+      "hwBasics": "HW structure basics",
+      "itStep": "IT Step Academy (Kyiv)",
+      "design3D": "3D design basics",
+      "photoshop": "Photoshop basics (+2D design)",
+      "frontend": "Frontend development (HTML, CSS)",
+      "pythonJr": "Python (jr level)",
+      "highSchool": "High school: I.T.I. “N.Copernico – A.Carpeggiani” (Ferrara) with computer science degree",
+      "hsC": "C",
+      "hsCpp": "C++ (Arduino)",
+      "hsHtmlCss": "HTML, CSS",
+      "hsJava": "Java",
+      "hsJavaScript": "JavaScript",
+      "hsNetworking": "Networking/Networking structure (ISO/OSI)/Networking systems/Networking (TCP/IP) devices management",
+      "hsSwHw": "SW/HW structure",
+      "hsOs": "OS Structure",
+      "hsOop": "OOP/OOD basics",
+      "hsTelecom": "Telecommunications basics",
+      "hsElectronics": "Electronics basics",
+      "hsMachineLang": "Machine language/binary structure basics",
+      "hsCircuits": "Creating and moderating logical circuits (+Arduino)",
+      "hsMatlab": "MATLAB",
+      "hsAI": "Artificial Intelligence basics",
+      "w3schools": "W3Schools",
+      "w3C": "C, HTML, CSS, JavaScript skills improvements",
+      "w3Cpp": "C++ basics"
+    },
+    "projectsSection": {
+      "heading": "My projects",
+      "selectLabel": "Select dataset",
+      "optionStatic": "Static JSON dataset",
+      "optionRandom": "Random values",
+      "optionDisabled": "Disabled –_(._.)_-",
+      "moreComing": "More projects are coming soon…",
+      "githubRepo": "GitHub repository",
+      "npmLink": "NPM link"
+    },
+    "nowPlaying": {
+      "heading": "Now Playing",
+      "track": "Ялта – Dzidzio",
+      "ytTitle": "Listen on YouTube",
+      "spotifyTitle": "Listen on Spotify"
+    },
+    "buttons": {
+      "wow": "wow!",
+      "hideImages": "Hide!"
+    },
+    "footer": {
+      "copyright": "© 2025 Tymofii Makhno"
+    },
+    "description": "Computer Science student with a strong foundation in software development, experienced in website development, and passionate about AI and cybersecurity. Enthusiastic about learning and applying new technologies to solve real-world problems. Fluent in English, Italian, Ukrainian and Russian, enabling effective collaboration in diverse environments."
+  }
+  

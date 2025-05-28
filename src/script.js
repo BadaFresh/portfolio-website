@@ -1,6 +1,30 @@
 function lightToDark(theme){
     document.getElementById('theme-icon').src = theme === 'dark' ? 'img/light-dark.gif' : 'img/dark-light';
 }
+function language(){
+    fetch('languages/eng.json')
+        .then(response => response.json())
+        .then(jsonData => {
+            function assignTextFromJSON(data, prefix = '') {
+                for (const [key, value] of Object.entries(data)) {
+                    if (typeof value === 'object' && value !== null) {
+                        assignTextFromJSON(value, `${prefix}${key}-`);
+                    } else {
+                        document.querySelectorAll(`.${prefix}${key}`).forEach(element => {
+                            element.innerHTML = value;
+                        });
+                    }
+                }
+            }
+
+            assignTextFromJSON(jsonData);
+        })
+        .catch(error => {
+            console.error('Error loading or parsing JSON:', error);
+        });
+}
+
+
 
 (() => {
     'use strict'
@@ -64,6 +88,9 @@ function lightToDark(theme){
         offcanvasMenu.addEventListener("hidden.bs.offcanvas", function () {
             menuButton.classList.remove("hidden"); // Show button when menu closes
         });
+
+        language();
+
     })
 })()
 

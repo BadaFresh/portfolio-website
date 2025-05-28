@@ -1,0 +1,116 @@
+{
+    "site": {
+      "title": "Тимофій"
+    },
+    "nav": {
+      "menuTitle": "Меню",
+      "intro": "Вступ",
+      "skills": "Навички та Технології",
+      "progLang": "Мови програмування",
+      "frameworks": "Фреймворки та інструменти",
+      "certifications": "Сертифікати",
+      "projects": "Проєкти",
+      "expEduc": "Досвід та Освіта",
+      "workExp": "Досвід роботи",
+      "studies": "Навчання",
+      "highSchool": "Старша школа (диплом)",
+      "socialLinks": "Знайди мене! (Соціальні мережі)"
+    },
+    "readyList": {
+      "work": "працювати",
+      "study": "вчитися",
+      "explore": "досліджувати"
+    },
+    "skillsSection": {
+      "heading": "Навички та Технології",
+      "progLang": "Мови програмування",
+      "html": "HTML",
+      "css": "CSS",
+      "javascript": "JavaScript",
+      "cLang": "C",
+      "cpp": "C++",
+      "arduino": "(Arduino)",
+      "java": "Java",
+      "python": "Python",
+      "pythonBasics": "(основи)",
+      "frameworks": "Фреймворки та інструменти",
+      "bootstrap": "Bootstrap",
+      "chartsjs": "Charts.js",
+      "github": "GitHub",
+      "npm": "Пакети NPM (Node.js)",
+      "parcel": "Parcel",
+      "eslint": "Лінтер (ESlint)",
+      "libraries": "Бібліотеки Python, C, C++, Java"
+    },
+    "certifications": {
+      "heading": "Сертифікати",
+      "matlab": "MATLAB:",
+      "matlabOnramp": "MATLAB Onramp",
+      "simulinkOnramp": "Simulink Onramp",
+      "simscapeOnramp": "Simscape Onramp",
+      "englishCert": "Сертифікат з англійської B2 Cambridge (до травня 2024)",
+      "avidityIntern": "стажування avidity:",
+      "avidCert": "Сертифікат про проходження (від avidity)",
+      "erasmusCert": "СЕРТИФІКАТ СТАЖУВАННЯ (фінансований Програмою Erasmus+)"
+    },
+    "expEduc": {
+      "heading": "Досвід та Освіта",
+      "workHeading": "Досвід роботи",
+      "avidity": "Avidity (Берлін) – місячне стажування (здебільшого фронтенд-розробка)",
+      "freelance": "Фріланс (здебільшого Україна) – 12+ годин (фронтенд-розробка)",
+      "newIntern": "Нове стажування незабаром… 1 місяць (Феррара)",
+      "studiesHeading": "Навчання",
+      "secondarySchool": "Середня школа: Фінансовий ліцей (Київ)",
+      "pythonBasics": "Python (основи)",
+      "hwBasics": "Основи апаратного забезпечення",
+      "itStep": "IT Step Academy (Київ)",
+      "design3D": "Основи 3D-дизайну",
+      "photoshop": "Основи Photoshop (+2D-дизайн)",
+      "frontend": "Фронтенд-розробка (HTML, CSS)",
+      "pythonJr": "Python (початковий рівень)",
+      "highSchool": "Старша школа: I.T.I. “N.Copernico – A.Carpeggiani” (Феррара), спеціальність — інформатика",
+      "hsC": "C",
+      "hsCpp": "C++ (Arduino)",
+      "hsHtmlCss": "HTML, CSS",
+      "hsJava": "Java",
+      "hsJavaScript": "JavaScript",
+      "hsNetworking": "Мережі/архітектура ISO/OSI/мережеві системи/пристрої (TCP/IP)",
+      "hsSwHw": "Архітектура ПЗ/апаратного забезпечення",
+      "hsOs": "Архітектура ОС",
+      "hsOop": "Основи ООП/OOD",
+      "hsTelecom": "Основи телекомунікацій",
+      "hsElectronics": "Основи електроніки",
+      "hsMachineLang": "Основи машинної мови/бінарної структури",
+      "hsCircuits": "Створення та модифікація логічних схем (+Arduino)",
+      "hsMatlab": "MATLAB",
+      "hsAI": "Основи штучного інтелекту",
+      "w3schools": "W3Schools",
+      "w3C": "Покращення навичок C, HTML, CSS, JavaScript",
+      "w3Cpp": "Основи C++"
+    },
+    "projectsSection": {
+      "heading": "Мої проєкти",
+      "selectLabel": "Вибрати набір даних",
+      "optionStatic": "Статичний JSON набір даних",
+      "optionRandom": "Випадкові значення",
+      "optionDisabled": "Вимкнено –_(._.)_-",
+      "moreComing": "Скоро ще більше проєктів…",
+      "githubRepo": "GitHub-репозиторій",
+      "npmLink": "Посилання на NPM"
+    },
+    "nowPlaying": {
+      "heading": "Зараз грає",
+      "track": "Ялта – Dzidzio",
+      "ytTitle": "Слухати на YouTube",
+      "spotifyTitle": "Слухати на Spotify"
+    },
+    "buttons": {
+      "wow": "вау!",
+      "hideImages": "Приховати!"
+    },
+    "footer": {
+      "copyright": "© 2025 Тимофій Махно"
+    },
+    "description": "Студент інформатики з міцною базою в розробці ПЗ, досвідом у створенні вебсайтів і захопленням до ШІ та кібербезпеки. Натхненний навчатися й застосовувати нові технології для вирішення реальних проблем. Вільно володіє англійською, італійською, українською та російською мовами, що дозволяє ефективно співпрацювати в різних середовищах."
+  }
+  

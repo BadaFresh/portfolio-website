@@ -1,0 +1,129 @@
+{
+    "site": {
+      "title": "Tymofii"
+    },
+    "nav": {
+      "menuTitle": "Menu",
+      "intro": "Introduzione",
+      "skills": "Competenze e Tecnologie",
+      "progLang1": "Linguaggi di pr",
+      "progLang2": "grammazione",
+      "frameworks1": "Fr",
+      "frameworks2": "mework e strumenti",
+      "certifications1": "Certific",
+      "certifications2": "zioni",
+      "projects": "Progetti",
+      "expEduc": "Esperienza e Istruzione",
+      "workExp": "Esperienza lavorativa",
+      "studies": "Studi",
+      "highSchool": "Scuola superiore (diploma)",
+      "socialLinks": "Trovami! (Link social)"
+    },
+    "r":{
+        "a": "a",
+        "englishCert1": "I"
+    },
+    "lime":{
+        "a": "a"
+    },
+    "v":{
+        "o": "o"
+    },
+    "readyList": {
+      "work": "lavoro",
+      "study": "studio",
+      "explore": "esplora"
+    },
+    "skillsSection": {
+      "heading": "Competenze e Tecnologie",
+      "progLang": "Linguaggi di programmazione",
+      "html": "HTML",
+      "css": "CSS",
+      "javascript": "JavaScript",
+      "cLang": "C",
+      "cpp": "C++",
+      "arduino": "(Arduino)",
+      "java": "Java",
+      "python": "Python",
+      "pythonBasics": "(basi)",
+      "frameworks": "Framework e strumenti",
+      "bootstrap": "Bootstrap",
+      "chartsjs": "Charts.js",
+      "github": "GitHub",
+      "npm": "Pacchetti NPM (Node.js)",
+      "parcel": "Parcel",
+      "eslint": "Linter (ESlint)",
+      "libraries": "Librerie Python, C, C++, Java"
+    },
+    "certifications": {
+      "heading": "Certificazioni",
+      "matlab": "MATLAB:",
+      "matlabOnramp": "MATLAB Onramp",
+      "simulinkOnramp": "Simulink Onramp",
+      "simscapeOnramp": "Simscape Onramp",
+      "englishCert": "Certificazione Inglese B2 Cambridge (Entro maggio 2024)",
+      "avidityIntern": "tirocinio avidity:",
+      "avidCert": "Attestato di completamento (da avidity)",
+      "erasmusCert": "CERTIFICATO DI TIROCINIO (finanziato dal Programma Erasmus+)"
+    },
+    "expEduc": {
+      "heading": "Esperienza e Istruzione",
+      "workHeading": "Esperienza lavorativa",
+      "avidity": "Avidity (Berlino) – tirocinio di 1 mese (principalmente sviluppo frontend)",
+      "freelance": "Freelance (soprattutto Ucraina) – 12+ ore (sviluppo frontend)",
+      "newIntern": "Nuovo tirocinio in arrivo… 1 mese (Ferrara)",
+      "studiesHeading": "Studi",
+      "secondarySchool": "Scuola secondaria: Фінансовий ліцей (Kyiv)",
+      "pythonBasics": "Python (basi)",
+      "hwBasics": "Basi di struttura hardware",
+      "itStep": "IT Step Academy (Kyiv)",
+      "design3D": "Basi di design 3D",
+      "photoshop": "Basi di Photoshop (+design 2D)",
+      "frontend": "Sviluppo frontend (HTML, CSS)",
+      "pythonJr": "Python (livello junior)",
+      "highSchool": "Scuola superiore: I.T.I. “N.Copernico – A.Carpeggiani” (Ferrara) con indirizzo informatica",
+      "hsC": "C",
+      "hsCpp": "C++ (Arduino)",
+      "hsHtmlCss": "HTML, CSS",
+      "hsJava": "Java",
+      "hsJavaScript": "JavaScript",
+      "hsNetworking": "Networking/struttura di rete (ISO/OSI)/sistemi di rete/dispositivi (TCP/IP)",
+      "hsSwHw": "Struttura SW/HW",
+      "hsOs": "Struttura OS",
+      "hsOop": "Basi OOP/OOD",
+      "hsTelecom": "Basi di telecomunicazioni",
+      "hsElectronics": "Basi di elettronica",
+      "hsMachineLang": "Basi di linguaggio macchina/struttura binaria",
+      "hsCircuits": "Creazione e moderazione di circuiti logici (+Arduino)",
+      "hsMatlab": "MATLAB",
+      "hsAI": "Basi di Intelligenza Artificiale",
+      "w3schools": "W3Schools",
+      "w3C": "Miglioramento abilità C, HTML, CSS, JavaScript",
+      "w3Cpp": "Basi di C++"
+    },
+    "projectsSection": {
+      "heading": "I miei progetti",
+      "selectLabel": "Seleziona dataset",
+      "optionStatic": "Dataset JSON statico",
+      "optionRandom": "Valori casuali",
+      "optionDisabled": "Disabilitato –_(._.)_-",
+      "moreComing": "Altri progetti in arrivo…",
+      "githubRepo": "Repository GitHub",
+      "npmLink": "Link NPM"
+    },
+    "nowPlaying": {
+      "heading": "Ora in riproduzione",
+      "track": "Ялта – Dzidzio",
+      "ytTitle": "Ascolta su YouTube",
+      "spotifyTitle": "Ascolta su Spotify"
+    },
+    "buttons": {
+      "wow": "wow!",
+      "hideImages": "Nascondi!"
+    },
+    "footer": {
+      "copyright": "© 2025 Tymofii Makhno"
+    },
+    "description": "Studente di Informatica con una solida base nello sviluppo software, esperienza nello sviluppo di siti web e passione per l’IA e la cybersecurity. Enthusiasta di apprendere e applicare nuove tecnologie per risolvere problemi reali. Fluente in inglese, italiano, ucraino e russo, permettendo una collaborazione efficace in ambienti diversi."
+  }
+  
