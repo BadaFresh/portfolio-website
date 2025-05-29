@@ -54,6 +54,18 @@ function lightToDark(theme){
             }, 1120)
         })
 
+        document.querySelectorAll(".unhiden").forEach(element => {
+            element.addEventListener("click", (event) => {
+                event.preventDefault(); // Prevent anchor jump
+                let rawText = element.textContent || element.innerText;
+                let className = "." + rawText.replace(/[^a-zA-Z]/g, '');
+                classUnhide(className.toLowerCase(), element, true);
+                
+            });
+        });
+        
+        
+
         const menuButton = document.getElementById("menuButton");
         const offcanvasMenu = document.getElementById("mobileMenu");
 
@@ -153,3 +165,86 @@ function showLinks(){
 function hideLinks(){
     document.getElementById("imglinks").style.display = "none" 
 }
+
+function classUnhide(className, element, followLink) {
+    const elements = document.querySelectorAll(className);
+
+    elements.forEach((el, index) => {
+        const isHidden = el.hidden;
+
+        if(element.href!=null && element.href!="#"&&followLink){
+            window.location.href = element.href;
+            setTimeout(() => {
+                el.hidden = false;
+                el.hidden = false;
+                el.style.transition = "none";
+                el.style.transform = "translateX(-10%)";
+                el.style.opacity = "0";
+                void el.offsetWidth; // trigger reflow
+    
+                setTimeout(() => {
+                    el.style.transition = "transform 0.4s ease, opacity 0.4s ease";
+                    el.style.transform = "translateX(0)";
+                    el.style.opacity = "1";
+                }, index * 100);
+            }, 350);
+            
+        }
+        else{
+            if (isHidden) {
+            
+
+                // Show with animation
+                el.hidden = false;
+                el.style.transition = "none";
+                el.style.transform = "translateX(-10%)";
+                el.style.opacity = "0";
+                void el.offsetWidth; // trigger reflow
+    
+                setTimeout(() => {
+                    el.style.transition = "transform 0.4s ease, opacity 0.4s ease";
+                    el.style.transform = "translateX(0)";
+                    el.style.opacity = "1";
+                }, index * 100);
+                
+            } else {
+                // Hide with reverse animation
+                if(el.classList.contains("unhiden")){
+                    let rawText = el.textContent || el.innerText;
+                    let className1 = "." + rawText.replace(/[^a-zA-Z]/g, '');
+                    document.querySelectorAll(className1.toLowerCase()).forEach((elemento) => {
+                        if(elemento.hidden==false){
+                            classUnhide(className1.toLowerCase(), el, false);
+                        }
+                    });
+                }
+
+                setTimeout(() => {
+                    el.style.transition = "transform 0.4s ease, opacity 0.4s ease";
+                    el.style.transform = "translateX(-10%)";
+                    el.style.opacity = "0";
+    
+                    // After animation completes, hide the element
+                    setTimeout(() => {
+                        el.hidden = true;
+                    }, 400);
+                }, index * 100);
+            }
+        }
+    });
+}
+
+document.querySelectorAll(".unhiden").forEach(element => {
+    element.addEventListener("mouseover", () => {
+        element.style.textShadow = `0 0 1px white, 0 0 1.5px white`;
+    });
+
+    element.addEventListener("mouseout", () => {
+        element.style.textShadow = ""; // Remove the glow
+    });
+});
+
+
+
+
+

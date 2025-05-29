@@ -29,21 +29,21 @@
         <div class="offcanvas-body">
             <a href="#maintitl" class="nav-link wh" id="hp"><img loading="lazy" src="img/darkHP.png" alt="" class="miniLogo" onclick="homeAnim()" id="hpImm"> Introductiuon</a>
             <br>
-            <a href="#slstcn" class="nav-link skills wh">Skills & Technologies</a>
+            <a href="#slstcn" class="nav-link skills wh unhiden">Skills & Technologies</a>
             <br>
-            <a href="#prlan" class="nav-link wh">Pr<b class="vio">o</b>gramming languages <img loading="lazy" src="img/code.gif" class="miniLogo mx-2" alt=""></a>
+            <a href="#prlan" class="nav-link wh skillstechnologies unhiden" hidden>Pr<b class="vio">o</b>gramming languages <img loading="lazy" src="img/code.gif" class="miniLogo mx-2" alt=""></a>
             <br>
-            <a href="#frtls" class="nav-link wh">Fr<b class="rd">a</b>meworks & tools <img loading="lazy" src="img/web.gif" class="miniLogo mx-2" alt=""></a>
+            <a href="#frtls" class="nav-link wh skillstechnologies unhiden" hidden>Fr<b class="rd">a</b>meworks & tools <img loading="lazy" src="img/web.gif" class="miniLogo mx-2" alt=""></a>
             <br>
-            <a href="#crtfct" class="nav-link wh">Certific<b class="yll">a</b>tions <img loading="lazy" src="img/certificate.gif" class="miniLogo mx-2" alt=""></a>
+            <a href="#crtfct" class="nav-link wh skillstechnologies unhiden" hidden>Certific<b class="yll">a</b>tions <img loading="lazy" src="img/certificate.gif" class="miniLogo mx-2" alt=""></a>
             <br>
             <a href="#leftbox" class="nav-link proj wh"><b>Projects</b></a>
             <br>
-            <a href="#exp" class="nav-link exp wh">Experience & Education</a>
+            <a href="#exp" class="nav-link exp wh maiunhidenntag">Experience & Education</a>
             <br>
-            <a href="#we" class="nav-link wh"><b>Working experience</b></a>
+            <a href="#we" class="nav-link wh experienceeducation" hidden><b>Working experience</b></a>
             <br>
-            <a href="#st" class="nav-link wh">Studies</a>
+            <a href="#st" class="nav-link wh experienceeducation" hidden>Studies</a>
             <br>
             <div id="hsc"><a href="#hs" class="nav-link wh">High school (degree) </a> <a href="https://www.iiscopernico.edu.it/offerta-formativa-iti/informatica-e-telecomunicazioni#info" class="miniLogo mx-1"><img src="img/iti.jpg" class=" miniLogo rounded-4" alt=""></a></div>
             <br>
@@ -54,15 +54,15 @@
     <div id="leftMenue">
         <div class="sidebar d-none d-lg-block">
             <a href="#main" class="nav-link"><b>Introductiuon</b></a>
-            <a href="#slstcn" class="nav-link skills">Skills & Technologies</a>
-            <a href="#prlan" class="nav-link">Pr<b class="vio">o</b>gramming languages</a>
-            <a href="#frtls" class="nav-link">Fr<b class="rd">a</b>meworks & tools</a>
-            <a href="#crtfct" class="nav-link">Certific<b class="yll">a</b>tions</a>
+            <div class="unhiden"><a href="#" class="nav-link skills ">Skills & Technologies</a></div>
+            <a href="#prlan" class="nav-link skillstechnologies unhiden" hidden>Pr<b class="vio">o</b>gramming languages</a>
+            <a href="#frtls" class="nav-link skillstechnologies unhiden" hidden>Fr<b class="rd">a</b>meworks & tools</a>
+            <a href="#crtfct" class="nav-link skillstechnologies unhiden" hidden>Certific<b class="yll">a</b>tions</a>
             <a href="#leftbox" class="nav-link proj"><b>Projects</b></a>
-            <a href="#exp" class="nav-link exp">Experience & Education</a>
-            <a href="#we" class="nav-link"><b>Working experience</b></a>
-            <a href="#st" class="nav-link">Studies</a>
-            <a href="#hs" class="nav-link">High school (degree)</a>
+            <div class="unhiden"><a href="#" class="nav-link exp">Experience & Education</a></div>
+            <a href="#we" class="nav-link experienceeducation unhiden" hidden><b>Working experience</b></a>
+            <a href="#st" class="nav-link experienceeducation unhiden" hidden>Studies</a>
+            <a href="#hs" class="nav-link studies unhiden" hidden>High school (degree)</a>
             <a href="#soc" class="nav-link"><b>Find me! (Social links)</b></a>
             <a href="#imglinks" class="nav-link imglinks" onclick="showLinks()">Immages/annimations</a>
         </div>
@@ -119,87 +119,87 @@
                     </ul>
                     <br><br id="slstcn">
                     <ul class="my-4 skills">
-                        <h1 class="content-section from-right" >Skills & Technologies</h1>
+                        <h1 class="content-section from-right unhiden" >Skills & Technologies</h1>
                         <br id="prlan">
-                        <li  class="content-section from-right my-1 skls">Pr<b class="vio">o</b>gramming languages</li>
-                        <ul>
-                            <li class="prlang content-section from-right my-1"><span class="org">HTML</span>    <span class="blu">CSS</span></li>
-                            <li class="prlang content-section from-right my-1"><span class="yll">JavaScript</span></li>
-                            <li class="prlang content-section from-right my-1"><span class="dblu">C</span></li>
-                            <li class="prlang content-section from-right my-1"><span class="dblu">C++</span> <span class="yll">(Arduino)</span></li>
-                            <li class="prlang content-section from-right my-1"><span class="grn">Java</span></li>
-                            <li class="prlang content-section from-right my-1"><span class="vio">Python</span> <span>(basics)</span></li>
+                        <li  class="content-section from-right my-1 skls skillstechnologies unhiden" hidden>Pr<b class="vio">o</b>gramming languages</li>
+                        <ul >
+                            <li class="prlang content-section my-1 programminglanguages" hidden><span class="org">HTML</span>    <span class="blu">CSS</span></li>
+                            <li class="prlang content-section my-1 programminglanguages" hidden><span class="yll">JavaScript</span></li>
+                            <li class="prlang content-section my-1 programminglanguages" hidden><span class="dblu">C</span></li>
+                            <li class="prlang content-section my-1 programminglanguages" hidden><span class="dblu">C++</span> <span class="yll">(Arduino)</span></li>
+                            <li class="prlang content-section my-1 programminglanguages" hidden><span class="grn">Java</span></li>
+                            <li class="prlang content-section my-1 programminglanguages" hidden><span class="vio">Python</span> <span>(basics)</span></li>
                         </ul>
-                        <li class="skls content-section from-right my-1" id="frtls">Fr<b class="rd">a</b>meworks & tools</li>
+                        <li class="skls content-section from-right my-1 skillstechnologies unhiden" hidden id="frtls">Fr<b class="rd">a</b>meworks & tools</li>
                         <ul>
-                            <li class="prlang content-section from-right my-1">Bootstrap <img loading="lazy" src="img/bootstrap.png" class="logo" alt=""></li>
-                            <li class="prlang content-section from-right my-1">Jarts.js <img loading="lazy" src="img/chartsjs.png" class="logo" alt=""></li>
-                            <li class="prlang content-section from-right my-1">GitHub <img loading="lazy" src="img/github.svg" class="logo" alt=""></li>
-                            <li class="prlang content-section from-right my-1">NPM packages (Node.js) <img  loading="lazy"src="img/npm.png" class="logo" alt=""></li>
-                            <li class="prlang content-section from-right my-1">Parcel <img loading="lazy" src="img/parcel.avif" class="logo" alt=""></li>
-                            <li class="prlang content-section from-right my-1">Linter (ESlint) <img loading="lazy" src="img/ESlint.png" class="logo" alt=""></li>
-                            <li class="prlang content-section from-right my-1"><span class="vio">Python</span> <span class="dblu">C</span> <span class="dblu">C++</span> <span class="grn">Java</span> libraries</li>
+                            <li class="prlang content-section from-right my-1 frameworkstools" hidden>Bootstrap <img loading="lazy" src="img/bootstrap.png" class="logo" alt=""></li>
+                            <li class="prlang content-section from-right my-1 frameworkstools" hidden>Jarts.js <img loading="lazy" src="img/chartsjs.png" class="logo" alt=""></li>
+                            <li class="prlang content-section from-right my-1 frameworkstools" hidden>GitHub <img loading="lazy" src="img/github.svg" class="logo" alt=""></li>
+                            <li class="prlang content-section from-right my-1frameworkstools" hidden>NPM packages (Node.js) <img  loading="lazy"src="img/npm.png" class="logo" alt=""></li>
+                            <li class="prlang content-section from-right my-1 frameworkstools" hidden>Parcel <img loading="lazy" src="img/parcel.avif" class="logo" alt=""></li>
+                            <li class="prlang content-section from-right my-1 frameworkstools" hidden>Linter (ESlint) <img loading="lazy" src="img/ESlint.png" class="logo" alt=""></li>
+                            <li class="prlang content-section from-right my-1 frameworkstools" hidden><span class="vio">Python</span> <span class="dblu">C</span> <span class="dblu">C++</span> <span class="grn">Java</span> libraries</li>
                         </ul>
-                        <li class="skls content-section from-right my-1" id="crtfct">Certific<b class="yll">a</b>tions</li>
+                        <li class="skls content-section from-right my-1 skillstechnologies unhiden" hidden id="crtfct">Certific<b class="yll">a</b>tions</li>
                         <ul>
-                            <li class="prlang content-section from-right my-1">MATLAB:</li>
+                            <li class="prlang content-section from-right my-1 certifications unhiden" hidden>MATLAB:</li>
                             <ul>
-                                <li class="mtlb content-section from-right my-1">MATLAB Onramp</li>
-                                <li class="mtlb content-section from-right my-1">Simulink Onramp</li>
-                                <li class="mtlb content-section from-right my-1">Simscapeonramp</li>
+                                <li class="mtlb content-section from-right my-1 matlab" hidden>MATLAB Onramp</li>
+                                <li class="mtlb content-section from-right my-1 matlab" hidden>Simulink Onramp</li>
+                                <li class="mtlb content-section from-right my-1 matlab" hidden>Simscapeonramp</li>
                             </ul>
-                            <li class="prlang content-section from-right my-1"><b class="rd">E</b>nglish <b class="blu nb">B2</b> Cambrige certification (By May 2024)</li>
-                            <li class="prlang content-section from-right my-1 fs-3">avidity intership:</li>
+                            <li class="prlang content-section from-right my-1 certifications" hidden><b class="rd">E</b>nglish <b class="blu nb">B2</b> Cambrige certification (By May 2024)</li>
+                            <li class="prlang content-section from-right my-1 fs-3 certifications unhiden" hidden>avidity intership:</li>
                             <ul>
-                                <li class="mtlb content-section from-right my-1 fs-4">Certificate of Completion (by avidity)</li>
-                                <li class="mtlb content-section from-right my-1">INTERSHIP CERTIFICATE (funded by Erasmus+ Programme)</li>
+                                <li class="mtlb content-section from-right my-1 fs-4 avidityintership" hidden>Certificate of Completion (by avidity)</li>
+                                <li class="mtlb content-section from-right my-1 avidityintership" hidden>INTERSHIP CERTIFICATE (funded by Erasmus+ Programme)</li>
                             </ul>
                         </ul>
                     </ul>
                     <ul class="content-section from-right exp" id="exp" onmouseover="skills()">
-                        <h1 class="content-section from-right my-3">Experience & Education</h1>
-                        <li class="skls content-section from-right my-2" id="we">Working experience</li>
+                        <h1 class="content-section from-right my-3 unhiden">Experience & Education</h1>
+                        <li class="skls content-section from-right my-2 experienceeducation unhiden" hidden id="we">Working experience</li>
                         <ul>
-                            <li class="prlang content-section from-right my-1">Avidity (Berlin) - 1 month internship (mostly frontend development)</li>
-                            <li class="prlang content-section from-right my-1">Freelance (mostly Ukraine) - 12+ hours (frontend development)</li>
-                            <li class="prlang content-section from-right my-1 op">New internship is comming... 1 month (Ferrara)</li>
+                            <li class="prlang content-section from-right my-1 workingexperience" hidden>Avidity (Berlin) - 1 month internship (mostly frontend development)</li>
+                            <li class="prlang content-section from-right my-1 workingexperience" hidden>Freelance (mostly Ukraine) - 12+ hours (frontend development)</li>
+                            <li class="prlang content-section from-right my-1 op workingexperience" hidden>New internship is comming... 1 month (Ferrara)</li>
                         </ul>
-                        <li class="skls content-section from-right my-2" id="st">Studies</li>
+                        <li class="skls content-section from-right my-2 experienceeducation unhiden" hidden id="st">Studies</li>
                         <ul>
-                            <li class="prlang content-section from-right my-1"><b class="brz">Secondary school</b>: Фінансовий ліцей (Kyiv) <img loading="lazy" src="img/fl.png" class="logo rounded-5" alt=""></li>
+                            <li class="prlang content-section from-right my-1 studies unhiden" hidden><b class="brz">Secondary school</b>: Фінансовий ліцей (Kyiv) <img loading="lazy" src="img/fl.png" class="logo rounded-5" alt=""></li>
                             <ul>
-                                <li class="prlang content-section from-right my-1"><span class="vio">Python</span> (basics) <span class="skillsg org"></span></li>
-                                <li class="prlang content-section from-right my-1">HW structure basics <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1 secondaryschoolkyiv" hidden><span class="vio">Python</span> (basics) <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1 secondaryschoolkyiv" hidden>HW structure basics <span class="skillsg org"></span></li>
                             </ul>
-                            <li class="prlang content-section from-right my-1">IT Step Academy (Kyiv) <img loading="lazy" src="img/itstep.png" class="logo" alt=""></li>
+                            <li class="prlang content-section from-right my-1 studies unhiden" hidden>IT Step Academy (Kyiv) <img loading="lazy" src="img/itstep.png" class="logo" alt=""></li>
                             <ul>
-                                <li class="prlang content-section from-right my-1">3D design basics <span class="skillsg org"></span></li>
-                                <li class="prlang content-section from-right my-1"><span class="dblu">Photoshop</span> basics (+2D design)<span class="skillsg org"></span></li>
-                                <li class="prlang content-section from-right my-1">Frontend development (<span class="org">HTML</span> <span class="blu">CSS</span>)<span class="skillsg org"></span></li>
-                                <li class="prlang content-section from-right my-1"><span class="vio">Python</span> (jr level) <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1 itstepacademykyiv" hidden>3D design basics <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1 itstepacademykyiv" hidden><span class="dblu">Photoshop</span> basics (+2D design)<span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1 itstepacademykyiv" hidden>Frontend development (<span class="org">HTML</span> <span class="blu">CSS</span>)<span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1 itstepacademykyiv" hidden><span class="vio">Python</span> (jr level) <span class="skillsg org"></span></li>
                             </ul>
-                            <li class="prlang content-section from-right my-1" id="hs"><b class="slvr">High school</b>: I.T.I. "N.Copernico - A.Carpeggiani" (Ferrara) with computer science degree <a href="https://www.iiscopernico.edu.it/offerta-formativa-iti/informatica-e-telecomunicazioni#info"><img src="img/iti.jpg" class="logo rounded-4" alt=""></a></li>
+                            <li class="prlang content-section from-right my-1 studies unhiden" hidden id="hs"><b class="slvr">High school</b>: I.T.I. "N.Copernico - A.Carpeggiani" (Ferrara) with computer science degree <a href="https://www.iiscopernico.edu.it/offerta-formativa-iti/informatica-e-telecomunicazioni#info"><img src="img/iti.jpg" class="logo rounded-4" alt=""></a></li>
                             <ul>
-                                <li class="prlang content-section from-right my-1"><span class="dblu">C</span> <span class="skillsg org"></span></li>
-                                <li class="prlang content-section from-right my-1"><span class="dblu">C++</span> <span class="yll">(Arduino)</span> <span class="skillsg org"></span></li>
-                                <li class="prlang content-section from-right my-1"><span class="org">HTML</span> <span class="blu">CSS</span> <span class="skillsg org"></span></li>
-                                <li class="prlang content-section from-right my-1"><span class="grn">Java</span> <span class="skillsg org"></span></li>
-                                <li class="prlang content-section from-right my-1"><span class="yll">JavaScript</span> <span class="skillsg org"></span></li>
-                                <li class="prlang content-section from-right my-1">Networking/Networking structure (ISO/OSI)/Networking systems/Networking(TCP/IP) devices management <span class="skillsg org"></span></li>
-                                <li class="prlang content-section from-right my-1">SW/HW structure <span class="skillsg org"></span></li>
-                                <li class="prlang content-section from-right my-1">OS Structure <span class="skillsg org"></span></li>
-                                <li class="prlang content-section from-right my-1">OOP/OOD basics <span class="skillsg org"></span></li>
-                                <li class="prlang content-section from-right my-1">Telecomunications basics <span class="skillsg org"></span></li>
-                                <li class="prlang content-section from-right my-1">Electronics basics <span class="skillsg org"></span></li>
-                                <li class="prlang content-section from-right my-1"><b class="slvr">Machine language</b>/biary structure basics <span class="skillsg org"></span></li>
-                                <li class="prlang content-section from-right my-1">Creating and moderating logical circuits <b class="yll">(+Arduino)</b> <span class="skillsg org"></span></li>
-                                <li class="prlang content-section from-right my-1">MATLAB <span class="skillsg org"></span></li>
-                                <li class="prlang content-section from-right my-1">Artificial Intelligence basics <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1 highschooldegree highschoolitincopernicoacarpeggianiferrarawithcomputersciencedegree" hidden><span class="dblu">C</span> <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1 highschooldegree highschoolitincopernicoacarpeggianiferrarawithcomputersciencedegree" hidden><span class="dblu">C++</span> <span class="yll">(Arduino)</span> <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1 highschooldegree highschoolitincopernicoacarpeggianiferrarawithcomputersciencedegree" hidden><span class="org">HTML</span> <span class="blu">CSS</span> <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1 highschooldegree highschoolitincopernicoacarpeggianiferrarawithcomputersciencedegree" hidden><span class="grn">Java</span> <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1 highschooldegree highschoolitincopernicoacarpeggianiferrarawithcomputersciencedegree" hidden><span class="yll">JavaScript</span> <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1 highschooldegree highschoolitincopernicoacarpeggianiferrarawithcomputersciencedegree" hidden>Networking/Networking structure (ISO/OSI)/Networking systems/Networking(TCP/IP) devices management <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1 highschooldegree highschoolitincopernicoacarpeggianiferrarawithcomputersciencedegree" hidden>SW/HW structure <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1 highschooldegree highschoolitincopernicoacarpeggianiferrarawithcomputersciencedegree" hidden>OS Structure <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1 highschooldegree highschoolitincopernicoacarpeggianiferrarawithcomputersciencedegree" hidden>OOP/OOD basics <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1 highschooldegree highschoolitincopernicoacarpeggianiferrarawithcomputersciencedegree" hidden>Telecomunications basics <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1 highschooldegree highschoolitincopernicoacarpeggianiferrarawithcomputersciencedegree" hidden>Electronics basics <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1 highschooldegree highschoolitincopernicoacarpeggianiferrarawithcomputersciencedegree" hidden><b class="slvr">Machine language</b>/biary structure basics <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1 highschooldegree highschoolitincopernicoacarpeggianiferrarawithcomputersciencedegree" hidden>Creating and moderating logical circuits <b class="yll">(+Arduino)</b> <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1 highschooldegree highschoolitincopernicoacarpeggianiferrarawithcomputersciencedegree" hidden>MATLAB <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1 highschooldegree highschoolitincopernicoacarpeggianiferrarawithcomputersciencedegree" hidden>Artificial Intelligence basics <span class="skillsg org"></span></li>
                             </ul>
-                            <li class="prlang content-section from-right my-1"><b class="grn">W</b>3<b class="grn">Schools</b></li>
+                            <li class="prlang content-section from-right my-1 studies unhiden" hidden><b class="grn">W</b>3<b class="grn">Schools</b></li>
                             <ul>
-                                <li class="prlang content-section from-right my-1"><span class="dblu">C</span> <span class="org">HTML</span> <span class="blu">CSS</span> <span class="yll">JavaScript</span> skills improvements <span class="skillsg org"></span></li>
-                                <li class="prlang content-section from-right my-1"><span class="dblu">C++</span> basics <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1 wschools" hidden><span class="dblu">C</span> <span class="org">HTML</span> <span class="blu">CSS</span> <span class="yll">JavaScript</span> skills improvements <span class="skillsg org"></span></li>
+                                <li class="prlang content-section from-right my-1 wschools" hidden><span class="dblu">C++</span> basics <span class="skillsg org"></span></li>
                             </ul>
                         </ul>
                         <br>
